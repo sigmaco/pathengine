@@ -1,0 +1,62 @@
+>placement3D
+  >meshObjects
+    >meshObject .name spiralStaircase .rotation 2.92 .scale 1 .type spiralStaircase .x 14120 .y -37520 .z -3640 <
+    >meshObject .name simpleBridge .rotation 0 .scale 1 .type simpleBridge .x -14600 .y -10840 .z 600 <
+    >meshObject .name spiralStaircase .rotation -2.63999 .scale 1.43 .type spiralStaircase .x 49000 .y -11240 .z -5960 <
+    >meshObject .name straightStaircase .rotation -0.96 .scale 1 .type straightStaircase .x 34560 .y -35680 .z -7120 <
+    >meshObject .name tree .rotation 0 .scale 1 .type tree .x -30000 .y 27000 .z -200 <
+    >meshObject .name tree .rotation 0 .scale 1.2 .type tree .x -32000 .y 40000 .z -300 <
+    >meshObject .name tree .rotation 0 .scale 1.1 .type tree .x -29000 .y 60000 .z -200 <
+    >meshObject .isTerrain true .name terrain .rotation 0 .scale 1 .type terrain .x -9400 .y 42840 .z 0 <
+  <
+  >solidObjects
+    >solidObject .isTerrain true .name bigRock0 .rotation -0.0500004 .scale 1 .type floatingRock .x 16320 .y -44120 .z -3040 <
+    >solidObject .isTerrain true .name bigRock1 .rotation -3.86 .scale 1.82 .type floatingRock .x 32720 .y -12480 .z -5480 <
+    >solidObject .isTerrain true .name bigRock2 .rotation 2.7 .scale 1 .type floatingRock2 .x -1000 .y -26240 .z 1120 <
+    >solidObject .isTerrain true .name bigRock3 .rotation -0.08 .scale 1 .type floatingRock2 .x 29400 .y -2680 .z 280 <
+    >solidObject .name wallCorner0 .rotation -3.14159 .scale 1 .type crenellatedWallCorner .x -13800 .y 20000 .z -700 <
+    >solidObject .name wall1 .rotation 0 .scale 1 .type crenellatedWall .x -6000 .y 20000 .z -700 <
+    >solidObject .name wall0 .rotation 0 .scale 1 .type crenellatedWall .x 2000 .y 20000 .z -700 <
+    >solidObject .name wall2 .rotation 0 .scale 1 .type walkableWallWithArch .x 10000 .y 20000 .z -700 <
+    >solidObject .name wall0 .rotation 0 .scale 1 .type crenellatedWall .x 18000 .y 20000 .z -700 <
+    >solidObject .name wallCorner0 .rotation 1.5708 .scale 1 .type crenellatedWallCorner .x 29000 .y 23000 .z -700 <
+    >solidObject .name wall0 .rotation 1.5708 .scale 1 .type crenellatedWall .x 29000 .y 31000 .z -700 <
+    >solidObject .name wall1 .rotation -1.5708 .scale 1 .type crenellatedWallWithGap .x 29000 .y 38000 .z -700 <
+    >solidObject .name wall0 .rotation 1.5708 .scale 1 .type crenellatedWall .x 29000 .y 46000 .z -700 <
+    >solidObject .name wall1 .rotation -1.5708 .scale 1 .type crenellatedWallWithGap .x 29000 .y 54000 .z -700 <
+    >solidObject .name wallCorner0 .rotation 0 .scale 1 .type crenellatedWallCorner .x 26000 .y 65000 .z -700 <
+    >solidObject .name wall0 .rotation 0 .scale 1 .type crenellatedWall .x 18000 .y 65000 .z -700 <
+    >solidObject .name wall0 .rotation 0 .scale 1 .type crenellatedWall .x 10000 .y 65000 .z -700 <
+    >solidObject .name wall0 .rotation 0 .scale 1 .type crenellatedWall .x 2000 .y 65000 .z -700 <
+    >solidObject .name wall0 .rotation 0 .scale 1 .type crenellatedWall .x -6000 .y 65000 .z -700 <
+    >solidObject .name wallCorner0 .rotation -1.5708 .scale 1 .type crenellatedWallCorner .x -16800 .y 62000 .z -700 <
+    >solidObject .name wall0 .rotation 1.5708 .scale 1 .type crenellatedWall .x -16800 .y 54000 .z -700 <
+    >solidObject .name wall0 .rotation 1.5708 .scale 1 .type crenellatedWall .x -16800 .y 46000 .z -700 <
+    >solidObject .name wall0 .rotation 1.5708 .scale 1 .type crenellatedWall .x -16800 .y 38000 .z -700 <
+    >solidObject .name wall0 .rotation 1.5708 .scale 1 .type crenellatedWall .x -16800 .y 30000 .z -700 <
+    >solidObject .name ramp0 .rotation 0 .scale 1 .type walkableWallRamp .x 24000 .y 54000 .z -700 <
+    >solidObject .name wall0 .rotation 0 .scale 1 .type walkableWallWithArch .x 24000 .y 38000 .z -700 <
+    >solidObject .name ramp0 .rotation 0 .scale 1 .type walkableWallRamp .x 16000 .y 38000 .z -700 <
+    >solidObject .name fence0 .rotation 0 .scale 1 .type fence .x 32960 .y -15400 .z -6000 <
+    >solidObject .name fence1 .rotation 0 .scale 1 .type fence .x 36120 .y -15720 .z -5840 <
+    >solidObject .name fence2 .rotation 0 .scale 1 .type fence .x 38960 .y -15360 .z -5960 <
+    >solidObject .name fence3 .rotation 0.54 .scale 1 .type fence .x 41760 .y -16200 .z -6000 <
+    >solidObject .name fence4 .rotation 0.76 .scale 1 .type fence .x 44000 .y -17480 .z -6400 <
+    >solidObject .name fence5 .rotation 0.5 .scale 1 .type fence .x 46280 .y -18960 .z -6520 <
+    >solidObject .name table .rotation 0 .scale 1 .type table .x 12200 .y 11480 .z 0 <
+    >solidObject .name chair0 .rotation 0 .scale 1 .type chair .x 10800 .y 11760 .z 0 <
+    >solidObject .name chair1 .rotation -1.69 .scale 1 .type chair .x 12520 .y 9640 .z 0 <
+    >solidObject .name chair2 .rotation 2.7 .scale 1 .type chair .x 13960 .y 12200 .z 0 <
+    >solidObject .name chair3 .rotation 1.54 .scale 1 .type chair .x 12160 .y 14400 .z -160 <
+    >solidObject .name barrel0 .rotation 0 .scale 1 .type barrel .x -6120 .y 12160 .z 640 <
+    >solidObject .name barrel1 .rotation 0 .scale 1 .type barrel .x -11720 .y 16600 .z 0 <
+    >solidObject .name barrel2 .rotation 0 .scale 1 .type barrel .x 5280 .y 8040 .z 360 <
+    >solidObject .name crate0 .rotation 0 .scale 1 .type crate .x 6960 .y 6600 .z 280 <
+    >solidObject .name crate1 .rotation 0 .scale 1.15 .type crate .x 5680 .y 5200 .z 0 <
+    >solidObject .name crate2 .rotation 0.35 .scale 1 .type crate .x 5880 .y 4880 .z 1000 <
+    >solidObject .name archwayFloor .rotation 0 .scale 0.04 .type bigFlatFloor .x -28640 .y 14400 .z -1080 <
+    >solidObject .name archway0 .rotation 0 .scale 1 .type archway .x -28080 .y 13640 .z -1240 <
+    >solidObject .name archway2 .rotation 0 .scale 0.82 .type archway .x -30240 .y 12760 .z -1120 <
+    >solidObject .name archway3 .rotation 0 .scale 0.65 .type archway .x -32160 .y 13040 .z -1120 <
+  <
+<

@@ -1,0 +1,92 @@
+>solidObjects
+    >solidObject
+        >point .x 711 .y -888 .z 0 <
+        >point .x 961 .y -888 .z 0 <
+        >point .x 711 .y -638 .z 0 <
+        >point .x 961 .y -638 .z 0 <
+        >point .x 711 .y -888 .z 1089 <
+        >point .x 961 .y -888 .z 1089 <
+        >point .x 711 .y -638 .z 1089 <
+        >point .x 961 .y -638 .z 1089 <
+        >point .x 711 .y -888 .z 363 <
+        >point .x 961 .y -888 .z 363 <
+        >point .x 961 .y -638 .z 363 <
+        >point .x 711 .y -638 .z 363 <
+        >point .x 711 .y -888 .z 726 <
+        >point .x 961 .y -888 .z 726 <
+        >point .x 961 .y -638 .z 726 <
+        >point .x 711 .y -638 .z 726 <
+    <
+    >solidObject
+        >point .x -747 .y -888 .z 0 <
+        >point .x -497 .y -888 .z 0 <
+        >point .x -747 .y -638 .z 0 <
+        >point .x -497 .y -638 .z 0 <
+        >point .x -747 .y -888 .z 1089 <
+        >point .x -497 .y -888 .z 1089 <
+        >point .x -747 .y -638 .z 1089 <
+        >point .x -497 .y -638 .z 1089 <
+        >point .x -747 .y -888 .z 363 <
+        >point .x -497 .y -888 .z 363 <
+        >point .x -497 .y -638 .z 363 <
+        >point .x -747 .y -638 .z 363 <
+        >point .x -747 .y -888 .z 726 <
+        >point .x -497 .y -888 .z 726 <
+        >point .x -497 .y -638 .z 726 <
+        >point .x -747 .y -638 .z 726 <
+    <
+    >solidObject
+        >point .x -747 .y 1395 .z 0 <
+        >point .x -497 .y 1395 .z 0 <
+        >point .x -747 .y 1645 .z 0 <
+        >point .x -497 .y 1645 .z 0 <
+        >point .x -747 .y 1395 .z 1089 <
+        >point .x -497 .y 1395 .z 1089 <
+        >point .x -747 .y 1645 .z 1089 <
+        >point .x -497 .y 1645 .z 1089 <
+        >point .x -747 .y 1395 .z 363 <
+        >point .x -497 .y 1395 .z 363 <
+        >point .x -497 .y 1645 .z 363 <
+        >point .x -747 .y 1645 .z 363 <
+        >point .x -747 .y 1395 .z 726 <
+        >point .x -497 .y 1395 .z 726 <
+        >point .x -497 .y 1645 .z 726 <
+        >point .x -747 .y 1645 .z 726 <
+    <
+    >solidObject
+        >point .x 711 .y 1395 .z 0 <
+        >point .x 961 .y 1395 .z 0 <
+        >point .x 711 .y 1645 .z 0 <
+        >point .x 961 .y 1645 .z 0 <
+        >point .x 711 .y 1395 .z 1089 <
+        >point .x 961 .y 1395 .z 1089 <
+        >point .x 711 .y 1645 .z 1089 <
+        >point .x 961 .y 1645 .z 1089 <
+        >point .x 711 .y 1395 .z 363 <
+        >point .x 961 .y 1395 .z 363 <
+        >point .x 961 .y 1645 .z 363 <
+        >point .x 711 .y 1645 .z 363 <
+        >point .x 711 .y 1395 .z 726 <
+        >point .x 961 .y 1395 .z 726 <
+        >point .x 961 .y 1645 .z 726 <
+        >point .x 711 .y 1645 .z 726 <
+    <
+    >solidObject
+        >point .x -1106 .y -1147 .z 1059 <
+        >point .x 1246 .y -1147 .z 1059 <
+        >point .x -1106 .y 1895 .z 1059 <
+        >point .x 1246 .y 1895 .z 1059 <
+        >point .x -1106 .y -1147 .z 1139 <
+        >point .x 1246 .y -1147 .z 1139 <
+        >point .x -1106 .y 1895 .z 1139 <
+        >point .x 1246 .y 1895 .z 1139 <
+        >point .x -1106 .y -1147 .z 1086 <
+        >point .x 1246 .y -1147 .z 1086 <
+        >point .x 1246 .y 1895 .z 1086 <
+        >point .x -1106 .y 1895 .z 1086 <
+        >point .x -1106 .y -1147 .z 1113 <
+        >point .x 1246 .y -1147 .z 1113 <
+        >point .x 1246 .y 1895 .z 1113 <
+        >point .x -1106 .y 1895 .z 1113 <
+    <
+<

@@ -1,0 +1,5 @@
+project/testbedApp/SemiDynamicObstacles.cpp
+project/testbedApp/SemiDynamicObstacles/DoubleBufferedObstacleSet.cpp
+project/testbedApp/SemiDynamicObstacles/DynamicAgentManager.cpp
+sampleShared/Error.cpp
+sampleShared/LoadBinary.cpp

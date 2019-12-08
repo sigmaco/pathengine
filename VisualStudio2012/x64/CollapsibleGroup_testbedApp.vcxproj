@@ -1,0 +1,244 @@
+<?xml version="1.0" ?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Debug|x64">
+			<Configuration>
+				Debug
+			</Configuration>
+			<Platform>
+				x64
+			</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Release|x64">
+			<Configuration>
+				Release
+			</Configuration>
+			<Platform>
+				x64
+			</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\code\project\testbedApp\CollapsibleGroup.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\CollapsibleGroup\AssignTargets.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\CollapsibleGroup\AssignToDistanceBasedClusters.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\CollapsibleGroup\ClusterMovementOrder.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\CollapsibleGroup\ColumnTargetsManager.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\CollapsibleGroup\FormationMovementOrder.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\CollapsibleGroup\GenerateColumnTargets.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\CollapsibleGroup\GetGroupRootPosition.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\CollapsibleGroup\RowTargets.cpp"/>
+		<ClCompile Include="..\..\code\sampleShared\Error.cpp"/>
+		<ClCompile Include="..\..\code\sampleShared\IntegerPoint2D.cpp"/>
+		<ClCompile Include="..\..\code\sampleShared\SelectAndMove.cpp"/>
+		<ClCompile Include="..\..\code\sampleShared\WaitForFrame.cpp"/>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>
+			{15906781-238C-65B8-82DE-49E9EF9B07DA}
+		</ProjectGuid>
+		<MinimumVisualStudioVersion>
+			11.0
+		</MinimumVisualStudioVersion>
+		<PlatformToolset>
+			v110
+		</PlatformToolset>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+		<ConfigurationType>
+			DynamicLibrary
+		</ConfigurationType>
+		<UseDebugLibraries>
+			true
+		</UseDebugLibraries>
+		<EmbedManifest>
+			false
+		</EmbedManifest>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+		<ConfigurationType>
+			DynamicLibrary
+		</ConfigurationType>
+		<UseDebugLibraries>
+			false
+		</UseDebugLibraries>
+		<WholeProgramOptimization>
+			true
+		</WholeProgramOptimization>
+		<EmbedManifest>
+			false
+		</EmbedManifest>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<IntDir>
+			../../build/$(PlatformName)/$(Configuration)/intermediate/
+		</IntDir>
+		<OutDir>
+			../../build/$(PlatformName)/$(Configuration)/testbedApp/
+		</OutDir>
+		<TargetName>
+			CollapsibleGroup
+		</TargetName>
+		<LinkIncremental>
+			true
+		</LinkIncremental>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<IntDir>
+			../../build/$(PlatformName)/$(Configuration)/intermediate/
+		</IntDir>
+		<OutDir>
+			../../build/$(PlatformName)/$(Configuration)/testbedApp/
+		</OutDir>
+		<TargetName>
+			CollapsibleGroup
+		</TargetName>
+		<LinkIncremental>
+			false
+		</LinkIncremental>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<Link>
+			<GenerateDebugInformation>
+				true
+			</GenerateDebugInformation>
+			<GenerateWindowsMetadata>
+				false
+			</GenerateWindowsMetadata>
+			<OutputFile>
+				$(OutDir)CollapsibleGroup.dll
+			</OutputFile>
+			<AdditionalOptions>
+				 %(AdditionalOptions)
+			</AdditionalOptions>
+			<TargetMachine>
+				MachineX64
+			</TargetMachine>
+			<SubSystem>
+				Windows
+			</SubSystem>
+		</Link>
+		<CLCompile>
+			<PrecompiledHeader>
+				NotUsing
+			</PrecompiledHeader>
+			<DebugInformationFormat>
+				OldStyle
+			</DebugInformationFormat>
+			<WarningLevel>
+				Level3
+			</WarningLevel>
+			<CompileAsWinRT>
+				false
+			</CompileAsWinRT>
+			<AdditionalIncludeDirectories>
+				../../code/platform_x64;../../code
+			</AdditionalIncludeDirectories>
+			<TreatWarningAsError>
+				true
+			</TreatWarningAsError>
+			<ExceptionHandling>
+				false
+			</ExceptionHandling>
+			<StringPooling>
+				true
+			</StringPooling>
+			<MinimalRebuild>
+				false
+			</MinimalRebuild>
+			<ObjectFileName>
+				$(IntDir)d/d/d/d/%(RelativeDir)/
+			</ObjectFileName>
+			<PreprocessorDefinitions>
+				_HAS_EXCEPTIONS=0;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;ASSERTIONS_ON;%(PreprocessorDefinitions)
+			</PreprocessorDefinitions>
+			<Optimization>
+				Disabled
+			</Optimization>
+			<RuntimeLibrary>
+				MultiThreadedDebug
+			</RuntimeLibrary>
+		</CLCompile>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<Link>
+			<GenerateDebugInformation>
+				true
+			</GenerateDebugInformation>
+			<GenerateWindowsMetadata>
+				false
+			</GenerateWindowsMetadata>
+			<OutputFile>
+				$(OutDir)CollapsibleGroup.dll
+			</OutputFile>
+			<AdditionalOptions>
+				 %(AdditionalOptions)
+			</AdditionalOptions>
+			<EnableCOMDATFolding>
+				true
+			</EnableCOMDATFolding>
+			<OptimizeReferences>
+				true
+			</OptimizeReferences>
+			<TargetMachine>
+				MachineX64
+			</TargetMachine>
+			<SubSystem>
+				Windows
+			</SubSystem>
+		</Link>
+		<CLCompile>
+			<PrecompiledHeader>
+				NotUsing
+			</PrecompiledHeader>
+			<DebugInformationFormat>
+				OldStyle
+			</DebugInformationFormat>
+			<WarningLevel>
+				Level3
+			</WarningLevel>
+			<CompileAsWinRT>
+				false
+			</CompileAsWinRT>
+			<AdditionalIncludeDirectories>
+				../../code/platform_x64;../../code
+			</AdditionalIncludeDirectories>
+			<TreatWarningAsError>
+				true
+			</TreatWarningAsError>
+			<ExceptionHandling>
+				false
+			</ExceptionHandling>
+			<StringPooling>
+				true
+			</StringPooling>
+			<MinimalRebuild>
+				false
+			</MinimalRebuild>
+			<ObjectFileName>
+				$(IntDir)d/d/d/d/%(RelativeDir)/
+			</ObjectFileName>
+			<PreprocessorDefinitions>
+				_HAS_EXCEPTIONS=0;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)
+			</PreprocessorDefinitions>
+			<Optimization>
+				MaxSpeed
+			</Optimization>
+			<FunctionLevelLinking>
+				true
+			</FunctionLevelLinking>
+			<IntrinsicFunctions>
+				true
+			</IntrinsicFunctions>
+			<InlineFunctionExpansion>
+				AnySuitable
+			</InlineFunctionExpansion>
+			<RuntimeLibrary>
+				MultiThreaded
+			</RuntimeLibrary>
+		</CLCompile>
+	</ItemDefinitionGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+</Project>

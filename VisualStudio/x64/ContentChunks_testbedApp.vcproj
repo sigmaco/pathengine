@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<VisualStudioProject Name="ContentChunks (testbedApp)" ProjectGUID="{E604549D-AD82-3A23-08B0-0E11C44F6EF5}" ProjectType="Visual C++" Version="9,00">
+	<Platforms>
+		<Platform Name="x64"/>
+	</Platforms>
+	<ToolFiles/>
+	<Configurations>
+		<Configuration ConfigurationType="2" IntermediateDirectory="../../build/$(PlatformName)/$(ConfigurationName)/intermediate/ContentChunks" Name="Debug|x64" OutputDirectory="../../build/$(PlatformName)/$(ConfigurationName)/testbedApp">
+			<Tool AdditionalIncludeDirectories="../../code/platform_x64;../../code" DebugInformationFormat="1" ExceptionHandling="0" Name="VCCLCompilerTool" Optimization="0" PreprocessorDefinitions="_HAS_EXCEPTIONS=0;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;ASSERTIONS_ON" RuntimeLibrary="1" RuntimeTypeInfo="false" StringPooling="true" TreatWChar_tAsBuiltInType="false" UsePrecompiledHeader="0" WarningLevel="3"/>
+			<Tool AdditionalOptions="" GenerateDebugInformation="true" GenerateManifest="false" LinkIncremental="1" Name="VCLinkerTool" OutputFile="$(OutDir)/ContentChunks.dll" SubSystem="2" TargetMachine="17"/>
+		</Configuration>
+		<Configuration ConfigurationType="2" IntermediateDirectory="../../build/$(PlatformName)/$(ConfigurationName)/intermediate/ContentChunks" Name="DebugDLL|x64" OutputDirectory="../../build/$(PlatformName)/$(ConfigurationName)/testbedApp">
+			<Tool AdditionalIncludeDirectories="../../code/platform_x64;../../code" DebugInformationFormat="1" ExceptionHandling="0" Name="VCCLCompilerTool" Optimization="0" PreprocessorDefinitions="_HAS_EXCEPTIONS=0;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_STATIC_CPPLIB;ASSERTIONS_ON" RuntimeLibrary="3" RuntimeTypeInfo="false" StringPooling="true" TreatWChar_tAsBuiltInType="false" UsePrecompiledHeader="0" WarningLevel="3"/>
+			<Tool AdditionalOptions="" GenerateDebugInformation="true" GenerateManifest="false" LinkIncremental="1" Name="VCLinkerTool" OutputFile="$(OutDir)/ContentChunks.dll" SubSystem="2" TargetMachine="17"/>
+		</Configuration>
+		<Configuration ConfigurationType="2" IntermediateDirectory="../../build/$(PlatformName)/$(ConfigurationName)/intermediate/ContentChunks" Name="Release|x64" OutputDirectory="../../build/$(PlatformName)/$(ConfigurationName)/testbedApp">
+			<Tool AdditionalIncludeDirectories="../../code/platform_x64;../../code" DebugInformationFormat="1" EnableFunctionLevelLinking="true" EnableIntrinsicFunctions="true" ExceptionHandling="0" InlineFunctionExpansion="2" Name="VCCLCompilerTool" Optimization="2" PreprocessorDefinitions="_HAS_EXCEPTIONS=0;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS" RuntimeLibrary="0" RuntimeTypeInfo="false" StringPooling="true" TreatWChar_tAsBuiltInType="false" UsePrecompiledHeader="0" WarningLevel="3"/>
+			<Tool AdditionalOptions="" EnableCOMDATFolding="2" GenerateDebugInformation="true" GenerateManifest="false" LinkIncremental="1" Name="VCLinkerTool" OptimizeReferences="2" OutputFile="$(OutDir)/ContentChunks.dll" SubSystem="2" TargetMachine="17"/>
+		</Configuration>
+		<Configuration ConfigurationType="2" IntermediateDirectory="../../build/$(PlatformName)/$(ConfigurationName)/intermediate/ContentChunks" Name="ReleaseDLL|x64" OutputDirectory="../../build/$(PlatformName)/$(ConfigurationName)/testbedApp">
+			<Tool AdditionalIncludeDirectories="../../code/platform_x64;../../code" DebugInformationFormat="1" EnableFunctionLevelLinking="true" EnableIntrinsicFunctions="true" ExceptionHandling="0" InlineFunctionExpansion="2" Name="VCCLCompilerTool" Optimization="2" PreprocessorDefinitions="_HAS_EXCEPTIONS=0;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_STATIC_CPPLIB" RuntimeLibrary="2" RuntimeTypeInfo="false" StringPooling="true" TreatWChar_tAsBuiltInType="false" UsePrecompiledHeader="0" WarningLevel="3"/>
+			<Tool AdditionalOptions="" EnableCOMDATFolding="2" GenerateDebugInformation="true" GenerateManifest="false" LinkIncremental="1" Name="VCLinkerTool" OptimizeReferences="2" OutputFile="$(OutDir)/ContentChunks.dll" SubSystem="2" TargetMachine="17"/>
+		</Configuration>
+	</Configurations>
+	<References/>
+	<Files>
+		<Filter Filter="cpp;c" Name="Source Files">
+			<File RelativePath="..\..\code\project\testbedApp\ContentChunks.cpp">
+				<FileConfiguration Name="Debug">
+					<Tool Name="VCCLCompilerTool" ObjectFile="$(IntDir)/project/testbedApp/"/>
+				</FileConfiguration>
+				<FileConfiguration Name="DebugDLL">
+					<Tool Name="VCCLCompilerTool" ObjectFile="$(IntDir)/project/testbedApp/"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Release">
+					<Tool Name="VCCLCompilerTool" ObjectFile="$(IntDir)/project/testbedApp/"/>
+				</FileConfiguration>
+				<FileConfiguration Name="ReleaseDLL">
+					<Tool Name="VCCLCompilerTool" ObjectFile="$(IntDir)/project/testbedApp/"/>
+				</FileConfiguration>
+			</File>
+			<File RelativePath="..\..\code\sampleShared\Error.cpp">
+				<FileConfiguration Name="Debug">
+					<Tool Name="VCCLCompilerTool" ObjectFile="$(IntDir)/sampleShared/"/>
+				</FileConfiguration>
+				<FileConfiguration Name="DebugDLL">
+					<Tool Name="VCCLCompilerTool" ObjectFile="$(IntDir)/sampleShared/"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Release">
+					<Tool Name="VCCLCompilerTool" ObjectFile="$(IntDir)/sampleShared/"/>
+				</FileConfiguration>
+				<FileConfiguration Name="ReleaseDLL">
+					<Tool Name="VCCLCompilerTool" ObjectFile="$(IntDir)/sampleShared/"/>
+				</FileConfiguration>
+			</File>
+			<File RelativePath="..\..\code\sampleShared\LoadContentChunkPlacement.cpp">
+				<FileConfiguration Name="Debug">
+					<Tool Name="VCCLCompilerTool" ObjectFile="$(IntDir)/sampleShared/"/>
+				</FileConfiguration>
+				<FileConfiguration Name="DebugDLL">
+					<Tool Name="VCCLCompilerTool" ObjectFile="$(IntDir)/sampleShared/"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Release">
+					<Tool Name="VCCLCompilerTool" ObjectFile="$(IntDir)/sampleShared/"/>
+				</FileConfiguration>
+				<FileConfiguration Name="ReleaseDLL">
+					<Tool Name="VCCLCompilerTool" ObjectFile="$(IntDir)/sampleShared/"/>
+				</FileConfiguration>
+			</File>
+			<File RelativePath="..\..\code\sampleShared\LoadWhiteSpaceDelimited.cpp">
+				<FileConfiguration Name="Debug">
+					<Tool Name="VCCLCompilerTool" ObjectFile="$(IntDir)/sampleShared/"/>
+				</FileConfiguration>
+				<FileConfiguration Name="DebugDLL">
+					<Tool Name="VCCLCompilerTool" ObjectFile="$(IntDir)/sampleShared/"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Release">
+					<Tool Name="VCCLCompilerTool" ObjectFile="$(IntDir)/sampleShared/"/>
+				</FileConfiguration>
+				<FileConfiguration Name="ReleaseDLL">
+					<Tool Name="VCCLCompilerTool" ObjectFile="$(IntDir)/sampleShared/"/>
+				</FileConfiguration>
+			</File>
+			<File RelativePath="..\..\code\sampleShared\SimpleDOM.cpp">
+				<FileConfiguration Name="Debug">
+					<Tool Name="VCCLCompilerTool" ObjectFile="$(IntDir)/sampleShared/"/>
+				</FileConfiguration>
+				<FileConfiguration Name="DebugDLL">
+					<Tool Name="VCCLCompilerTool" ObjectFile="$(IntDir)/sampleShared/"/>
+				</FileConfiguration>
+				<FileConfiguration Name="Release">
+					<Tool Name="VCCLCompilerTool" ObjectFile="$(IntDir)/sampleShared/"/>
+				</FileConfiguration>
+				<FileConfiguration Name="ReleaseDLL">
+					<Tool Name="VCCLCompilerTool" ObjectFile="$(IntDir)/sampleShared/"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+	</Files>
+	<Globals/>
+</VisualStudioProject>

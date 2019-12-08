@@ -1,0 +1,2 @@
+
+tUnsigned32 GenerateAndSaveRandomSeed();

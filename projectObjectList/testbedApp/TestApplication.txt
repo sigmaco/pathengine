@@ -1,0 +1,5 @@
+project/testbedApp/TestApplication.cpp
+sampleShared/Error.cpp
+sampleShared/MoveAgent.cpp
+sampleShared/Sliding.cpp
+sampleShared/WaitForFrame.cpp
