@@ -1,0 +1,10 @@
+project/testbedApp/MeshFederation.cpp
+project/testbedApp/MeshFederation/BuildFederation_FromWorldMesh.cpp
+project/testbedApp/MeshFederation/BuildFederation_TileByTile.cpp
+project/testbedApp/MeshFederation/BuildFederation_TileByTile3DCP.cpp
+sampleShared/Error.cpp
+sampleShared/LoadBinary.cpp
+sampleShared/LoadContentChunkPlacement.cpp
+sampleShared/LoadWhiteSpaceDelimited.cpp
+sampleShared/SimpleDOM.cpp
+sampleShared/WaitForFrame.cpp

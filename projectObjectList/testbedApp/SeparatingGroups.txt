@@ -1,0 +1,6 @@
+project/testbedApp/SeparatingGroups.cpp
+project/testbedApp/SeparatingGroups/AgentAI.cpp
+project/testbedApp/SeparatingGroups/SeparatingGroups.cpp
+sampleShared/Error.cpp
+sampleShared/SelectAndMove.cpp
+sampleShared/WaitForFrame.cpp

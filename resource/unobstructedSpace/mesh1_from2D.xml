@@ -1,0 +1,1086 @@
+<unobstructedSpace>
+	<mappingTo2D>
+		<verts>
+			<vert targetElement="483" x="599" y="668"/>
+			<vert targetElement="420" x="599" y="708"/>
+			<vert targetElement="420" x="546" y="754"/>
+			<vert targetElement="420" x="506" y="754"/>
+			<vert targetElement="519" x="449" y="687"/>
+			<vert targetElement="519" x="449" y="647"/>
+			<vert targetElement="456" x="502" y="601"/>
+			<vert targetElement="492" x="542" y="601"/>
+			<vert targetElement="486" x="678" y="471"/>
+			<vert targetElement="468" x="775" y="367"/>
+			<vert targetElement="372" x="967" y="260"/>
+			<vert targetElement="372" x="1007" y="260"/>
+			<vert targetElement="399" x="1117" y="451"/>
+			<vert targetElement="399" x="1117" y="491"/>
+			<vert targetElement="402" x="1106" y="552"/>
+			<vert targetElement="432" x="1066" y="552"/>
+			<vert targetElement="429" x="965" y="678"/>
+			<vert targetElement="417" x="678" y="678"/>
+			<vert targetElement="489" x="612" y="500"/>
+			<vert targetElement="495" x="572" y="500"/>
+			<vert targetElement="450" x="417" y="731"/>
+			<vert targetElement="447" x="417" y="771"/>
+			<vert targetElement="120" x="-472" y="773"/>
+			<vert targetElement="120" x="-512" y="773"/>
+			<vert targetElement="171" x="-512" y="733"/>
+			<vert targetElement="315" x="-862" y="-718"/>
+			<vert targetElement="309" x="-1059" y="-709"/>
+			<vert targetElement="306" x="-1099" y="-709"/>
+			<vert targetElement="300" x="-1099" y="-749"/>
+			<vert targetElement="291" x="-1098" y="-950"/>
+			<vert targetElement="288" x="-1058" y="-950"/>
+			<vert targetElement="351" x="415" y="-939"/>
+			<vert targetElement="351" x="415" y="-899"/>
+			<vert targetElement="345" x="357" y="-706"/>
+			<vert targetElement="243" x="157" y="-705"/>
+			<vert targetElement="237" x="117" y="-705"/>
+			<vert targetElement="231" x="115" y="-905"/>
+			<vert targetElement="219" x="115" y="-945"/>
+			<vert targetElement="225" x="567" y="-948"/>
+			<vert targetElement="225" x="607" y="-948"/>
+			<vert targetElement="162" x="978" y="-309"/>
+			<vert targetElement="348" x="438" y="-976"/>
+			<vert targetElement="294" x="398" y="-976"/>
+			<vert targetElement="312" x="-888" y="-663"/>
+			<vert targetElement="318" x="-794" y="-667"/>
+			<vert targetElement="324" x="-511" y="-676"/>
+			<vert targetElement="261" x="-471" y="-676"/>
+			<vert targetElement="279" x="-108" y="216"/>
+			<vert targetElement="285" x="-108" y="176"/>
+			<vert targetElement="33" x="43" y="91"/>
+			<vert targetElement="282" x="-169" y="176"/>
+			<vert targetElement="276" x="-157" y="378"/>
+			<vert targetElement="270" x="-157" y="418"/>
+			<vert targetElement="264" x="-359" y="422"/>
+			<vert targetElement="255" x="-399" y="422"/>
+			<vert targetElement="321" x="-758" y="-717"/>
+			<vert targetElement="315" x="-798" y="-717"/>
+			<vert targetElement="213" x="-803" y="-918"/>
+			<vert targetElement="210" x="-803" y="-958"/>
+			<vert targetElement="204" x="-763" y="-958"/>
+			<vert targetElement="195" x="-563" y="-956"/>
+			<vert targetElement="198" x="-561" y="-160"/>
+			<vert targetElement="168" x="-561" y="-120"/>
+			<vert targetElement="174" x="-601" y="-120"/>
+			<vert targetElement="186" x="-862" y="-22"/>
+			<vert targetElement="333" x="-804" y="178"/>
+			<vert targetElement="189" x="-804" y="138"/>
+			<vert targetElement="183" x="-802" y="-62"/>
+			<vert targetElement="177" x="-762" y="-62"/>
+			<vert targetElement="168" x="-562" y="-60"/>
+			<vert targetElement="165" x="-562" y="-20"/>
+			<vert targetElement="474" x="1050" y="140"/>
+			<vert targetElement="246" x="318" y="-646"/>
+			<vert targetElement="345" x="358" y="-646"/>
+			<vert targetElement="354" x="918" y="-347"/>
+			<vert targetElement="159" x="921" y="-147"/>
+			<vert targetElement="153" x="921" y="-107"/>
+			<vert targetElement="147" x="721" y="-104"/>
+			<vert targetElement="138" x="681" y="-104"/>
+			<vert targetElement="144" x="667" y="-909"/>
+			<vert targetElement="228" x="667" y="-949"/>
+			<vert targetElement="249" x="918" y="-952"/>
+			<vert targetElement="135" x="958" y="-952"/>
+			<vert targetElement="132" x="968" y="91"/>
+			<vert targetElement="108" x="968" y="131"/>
+			<vert targetElement="108" x="928" y="131"/>
+			<vert targetElement="123" x="471" y="96"/>
+			<vert targetElement="57" x="127" y="-174"/>
+			<vert targetElement="54" x="167" y="-174"/>
+			<vert targetElement="48" x="175" y="-72"/>
+			<vert targetElement="42" x="175" y="-32"/>
+			<vert targetElement="45" x="135" y="-32"/>
+			<vert targetElement="6" x="-108" y="-33"/>
+			<vert targetElement="12" x="-218" y="-68"/>
+			<vert targetElement="15" x="-218" y="-108"/>
+			<vert targetElement="9" x="-225" y="105"/>
+			<vert targetElement="3" x="-108" y="33"/>
+			<vert targetElement="57" x="141" y="-207"/>
+			<vert targetElement="60" x="-162" y="-223"/>
+			<vert targetElement="66" x="-162" y="-263"/>
+			<vert targetElement="72" x="-110" y="-379"/>
+			<vert targetElement="78" x="-88" y="-407"/>
+			<vert targetElement="81" x="-63" y="-424"/>
+			<vert targetElement="87" x="-23" y="-424"/>
+			<vert targetElement="90" x="7" y="-421"/>
+			<vert targetElement="93" x="27" y="-401"/>
+			<vert targetElement="99" x="408" y="106"/>
+			<vert targetElement="105" x="707" y="193"/>
+			<vert targetElement="474" x="726" y="168"/>
+			<vert targetElement="474" x="766" y="168"/>
+			<vert targetElement="372" x="808" y="200"/>
+			<vert targetElement="462" x="808" y="240"/>
+			<vert targetElement="462" x="803" y="247"/>
+			<vert targetElement="378" x="726" y="349"/>
+			<vert targetElement="384" x="775" y="407"/>
+			<vert targetElement="390" x="1007" y="300"/>
+			<vert targetElement="387" x="1039" y="437"/>
+			<vert targetElement="435" x="988" y="538"/>
+			<vert targetElement="510" x="530" y="468"/>
+			<vert targetElement="156" x="981" y="-109"/>
+			<vert targetElement="354" x="978" y="-349"/>
+			<vert targetElement="363" x="839" y="-1019"/>
+			<vert targetElement="360" x="799" y="-1019"/>
+			<vert targetElement="30" x="51" y="-62"/>
+			<vert targetElement="282" x="-185" y="145"/>
+			<vert targetElement="333" x="-864" y="177"/>
+			<vert targetElement="447" x="418" y="831"/>
+			<vert targetElement="69" x="-182" y="-338"/>
+			<vert targetElement="18" x="-178" y="-108"/>
+			<vert targetElement="54" x="181" y="-207"/>
+			<vert targetElement="111" x="542" y="304"/>
+			<vert targetElement="471" x="601" y="334"/>
+			<vert targetElement="480" x="658" y="439"/>
+			<vert targetElement="396" x="903" y="471"/>
+			<vert targetElement="405" x="1005" y="401"/>
+			<vert targetElement="405" x="1005" y="437"/>
+			<vert targetElement="438" x="988" y="501"/>
+			<vert targetElement="441" x="965" y="501"/>
+			<vert targetElement="510" x="530" y="450"/>
+			<vert targetElement="516" x="413" y="450"/>
+			<vert targetElement="516" x="413" y="474"/>
+			<vert targetElement="165" x="-502" y="-78"/>
+			<vert targetElement="192" x="-502" y="-1015"/>
+			<vert targetElement="207" x="-802" y="-1018"/>
+			<vert targetElement="207" x="-862" y="-1018"/>
+			<vert targetElement="138" x="615" y="-495"/>
+			<vert targetElement="138" x="620" y="-212"/>
+			<vert targetElement="138" x="622" y="-99"/>
+			<vert targetElement="138" x="623" y="-43"/>
+			<vert targetElement="141" x="683" y="-43"/>
+			<vert targetElement="153" x="933" y="-48"/>
+			<vert targetElement="153" x="982" y="-49"/>
+			<vert targetElement="156" x="982" y="-59"/>
+			<vert targetElement="366" x="1159" y="-376"/>
+			<vert targetElement="363" x="1159" y="-1029"/>
+			<vert targetElement="363" x="1140" y="-1029"/>
+			<vert targetElement="360" x="543" y="-1021"/>
+			<vert targetElement="360" x="456" y="-1021"/>
+			<vert targetElement="360" x="455" y="-1019"/>
+			<vert targetElement="348" x="447" y="-999"/>
+			<vert targetElement="288" x="-681" y="-999"/>
+			<vert targetElement="288" x="-1151" y="-1009"/>
+			<vert targetElement="291" x="-1157" y="-1009"/>
+			<vert targetElement="297" x="-1158" y="-910"/>
+			<vert targetElement="303" x="-1160" y="-710"/>
+			<vert targetElement="303" x="-1160" y="-650"/>
+			<vert targetElement="306" x="-1085" y="-650"/>
+			<vert targetElement="309" x="-994" y="-656"/>
+			<vert targetElement="255" x="-462" y="69"/>
+			<vert targetElement="255" x="-458" y="400"/>
+			<vert targetElement="255" x="-457" y="482"/>
+			<vert targetElement="258" x="-397" y="482"/>
+			<vert targetElement="270" x="-147" y="477"/>
+			<vert targetElement="270" x="-98" y="476"/>
+			<vert targetElement="273" x="-98" y="416"/>
+			<vert targetElement="36" x="4" y="142"/>
+			<vert targetElement="27" x="98" y="52"/>
+			<vert targetElement="27" x="100" y="-20"/>
+			<vert targetElement="30" x="100" y="-53"/>
+			<vert targetElement="30" x="98" y="-55"/>
+			<vert targetElement="30" x="81" y="-68"/>
+			<vert targetElement="24" x="60" y="-84"/>
+			<vert targetElement="24" x="52" y="-90"/>
+			<vert targetElement="24" x="51" y="-90"/>
+			<vert targetElement="39" x="-215" y="145"/>
+			<vert targetElement="39" x="-214" y="146"/>
+			<vert targetElement="261" x="-412" y="-657"/>
+			<vert targetElement="261" x="-413" y="-738"/>
+			<vert targetElement="261" x="-422" y="-738"/>
+			<vert targetElement="261" x="-472" y="-736"/>
+			<vert targetElement="180" x="-801" y="-122"/>
+			<vert targetElement="180" x="-861" y="-122"/>
+			<vert targetElement="327" x="-1021" y="305"/>
+			<vert targetElement="330" x="-1026" y="566"/>
+			<vert targetElement="330" x="-1026" y="578"/>
+			<vert targetElement="330" x="-1018" y="582"/>
+			<vert targetElement="330" x="-1007" y="587"/>
+			<vert targetElement="330" x="-905" y="633"/>
+			<vert targetElement="330" x="-834" y="665"/>
+			<vert targetElement="342" x="-794" y="683"/>
+			<vert targetElement="342" x="-785" y="683"/>
+			<vert targetElement="342" x="-769" y="681"/>
+			<vert targetElement="342" x="-599" y="659"/>
+			<vert targetElement="339" x="-290" y="619"/>
+			<vert targetElement="339" x="-240" y="401"/>
+			<vert targetElement="339" x="-235" y="379"/>
+			<vert targetElement="339" x="-233" y="370"/>
+			<vert targetElement="339" x="-233" y="367"/>
+			<vert targetElement="339" x="-235" y="363"/>
+			<vert targetElement="336" x="-330" y="183"/>
+			<vert targetElement="171" x="-568" y="660"/>
+			<vert targetElement="171" x="-568" y="748"/>
+			<vert targetElement="120" x="-563" y="828"/>
+			<vert targetElement="414" x="420" y="999"/>
+			<vert targetElement="414" x="460" y="999"/>
+			<vert targetElement="417" x="1189" y="990"/>
+			<vert targetElement="411" x="1269" y="989"/>
+			<vert targetElement="399" x="1269" y="950"/>
+			<vert targetElement="399" x="1267" y="791"/>
+			<vert targetElement="390" x="1259" y="156"/>
+			<vert targetElement="135" x="1042" y="-1021"/>
+			<vert targetElement="135" x="959" y="-1021"/>
+			<vert targetElement="219" x="267" y="-1008"/>
+			<vert targetElement="219" x="55" y="-1004"/>
+			<vert targetElement="222" x="55" y="-944"/>
+			<vert targetElement="234" x="56" y="-744"/>
+			<vert targetElement="237" x="57" y="-645"/>
+			<vert targetElement="240" x="117" y="-645"/>
+			<vert targetElement="357" x="538" y="-423"/>
+			<vert targetElement="96" x="83" y="-406"/>
+			<vert targetElement="84" x="12" y="-476"/>
+			<vert targetElement="84" x="-51" y="-483"/>
+			<vert targetElement="84" x="-52" y="-483"/>
+			<vert targetElement="81" x="-60" y="-478"/>
+			<vert targetElement="75" x="-130" y="-433"/>
+			<vert targetElement="63" x="-260" y="-201"/>
+			<vert targetElement="63" x="-260" y="-171"/>
+			<vert targetElement="60" x="-194" y="-171"/>
+			<vert targetElement="21" x="13" y="-103"/>
+			<vert targetElement="24" x="35" y="-103"/>
+			<vert targetElement="21" x="18" y="-116"/>
+			<vert targetElement="21" x="-20" y="-145"/>
+			<vert targetElement="18" x="-139" y="-148"/>
+			<vert targetElement="18" x="-179" y="-149"/>
+			<vert targetElement="18" x="-187" y="-142"/>
+			<vert targetElement="15" x="-222" y="-111"/>
+			<vert targetElement="12" x="-266" y="-72"/>
+			<vert targetElement="9" x="-273" y="80"/>
+			<vert targetElement="9" x="-274" y="102"/>
+			<vert targetElement="9" x="-274" y="106"/>
+			<vert targetElement="39" x="-226" y="138"/>
+			<vert targetElement="39" x="-225" y="138"/>
+			<vert targetElement="45" x="213" y="33"/>
+			<vert targetElement="48" x="213" y="-92"/>
+			<vert targetElement="48" x="212" y="-151"/>
+			<vert targetElement="51" x="211" y="-208"/>
+			<vert targetElement="54" x="205" y="-208"/>
+			<vert targetElement="453" x="411" y="304"/>
+			<vert targetElement="504" x="542" y="412"/>
+			<vert targetElement="504" x="558" y="391"/>
+			<vert targetElement="498" x="583" y="358"/>
+			<vert targetElement="102" x="641" y="281"/>
+			<vert targetElement="477" x="679" y="411"/>
+		</verts>
+		<poly>
+			<edge startVert="272"/>
+			<edge startVert="166"/>
+			<edge startVert="291"/>
+		</poly>
+		<poly>
+			<edge startVert="274"/>
+			<edge startVert="273"/>
+			<edge startVert="292"/>
+			<edge startVert="293"/>
+		</poly>
+		<poly>
+			<edge startVert="294"/>
+			<edge startVert="295"/>
+			<edge startVert="174"/>
+			<edge startVert="275"/>
+		</poly>
+		<poly>
+			<edge startVert="296"/>
+			<edge startVert="297"/>
+			<edge startVert="298"/>
+			<edge startVert="276"/>
+		</poly>
+		<poly>
+			<edge startVert="324"/>
+			<edge startVert="325"/>
+			<edge startVert="201"/>
+			<edge startVert="323"/>
+		</poly>
+		<poly>
+			<edge startVert="318"/>
+			<edge startVert="319"/>
+			<edge startVert="320"/>
+			<edge startVert="200"/>
+		</poly>
+		<poly>
+			<edge startVert="232"/>
+			<edge startVert="231"/>
+			<edge startVert="386"/>
+		</poly>
+		<poly>
+			<edge startVert="303"/>
+			<edge startVert="304"/>
+			<edge startVert="305"/>
+			<edge startVert="306"/>
+			<edge startVert="307"/>
+			<edge startVert="197"/>
+		</poly>
+		<poly>
+			<edge startVert="312"/>
+			<edge startVert="313"/>
+			<edge startVert="279"/>
+			<edge startVert="278"/>
+			<edge startVert="311"/>
+		</poly>
+		<poly>
+			<edge startVert="199"/>
+			<edge startVert="280"/>
+			<edge startVert="314"/>
+			<edge startVert="315"/>
+			<edge startVert="316"/>
+			<edge startVert="317"/>
+		</poly>
+		<poly>
+			<edge startVert="321"/>
+			<edge startVert="322"/>
+			<edge startVert="323"/>
+			<edge startVert="320"/>
+		</poly>
+		<poly>
+			<edge startVert="326"/>
+			<edge startVert="327"/>
+			<edge startVert="328"/>
+			<edge startVert="329"/>
+			<edge startVert="204"/>
+		</poly>
+		<poly>
+			<edge startVert="332"/>
+			<edge startVert="329"/>
+			<edge startVert="330"/>
+			<edge startVert="331"/>
+		</poly>
+		<poly>
+			<edge startVert="281"/>
+			<edge startVert="334"/>
+			<edge startVert="335"/>
+			<edge startVert="336"/>
+			<edge startVert="337"/>
+			<edge startVert="338"/>
+			<edge startVert="339"/>
+			<edge startVert="340"/>
+			<edge startVert="341"/>
+		</poly>
+		<poly>
+			<edge startVert="282"/>
+			<edge startVert="342"/>
+			<edge startVert="343"/>
+			<edge startVert="208"/>
+		</poly>
+		<poly>
+			<edge startVert="345"/>
+			<edge startVert="346"/>
+			<edge startVert="347"/>
+			<edge startVert="212"/>
+			<edge startVert="344"/>
+		</poly>
+		<poly>
+			<edge startVert="302"/>
+			<edge startVert="300"/>
+			<edge startVert="301"/>
+		</poly>
+		<poly>
+			<edge startVert="349"/>
+			<edge startVert="221"/>
+			<edge startVert="348"/>
+		</poly>
+		<poly>
+			<edge startVert="354"/>
+			<edge startVert="355"/>
+			<edge startVert="356"/>
+			<edge startVert="357"/>
+			<edge startVert="358"/>
+			<edge startVert="359"/>
+			<edge startVert="360"/>
+			<edge startVert="361"/>
+			<edge startVert="362"/>
+			<edge startVert="363"/>
+			<edge startVert="364"/>
+			<edge startVert="365"/>
+			<edge startVert="366"/>
+			<edge startVert="283"/>
+			<edge startVert="350"/>
+			<edge startVert="351"/>
+			<edge startVert="352"/>
+			<edge startVert="353"/>
+		</poly>
+		<poly>
+			<edge startVert="223"/>
+			<edge startVert="366"/>
+			<edge startVert="367"/>
+		</poly>
+		<poly>
+			<edge startVert="368"/>
+			<edge startVert="369"/>
+			<edge startVert="370"/>
+			<edge startVert="228"/>
+		</poly>
+		<poly>
+			<edge startVert="300"/>
+			<edge startVert="182"/>
+			<edge startVert="299"/>
+		</poly>
+		<poly>
+			<edge startVert="371"/>
+			<edge startVert="372"/>
+			<edge startVert="373"/>
+			<edge startVert="374"/>
+			<edge startVert="375"/>
+			<edge startVert="376"/>
+			<edge startVert="284"/>
+		</poly>
+		<poly>
+			<edge startVert="229"/>
+			<edge startVert="376"/>
+			<edge startVert="377"/>
+		</poly>
+		<poly>
+			<edge startVert="379"/>
+			<edge startVert="229"/>
+			<edge startVert="378"/>
+		</poly>
+		<poly>
+			<edge startVert="380"/>
+			<edge startVert="381"/>
+			<edge startVert="382"/>
+			<edge startVert="379"/>
+		</poly>
+		<poly>
+			<edge startVert="383"/>
+			<edge startVert="384"/>
+			<edge startVert="385"/>
+			<edge startVert="382"/>
+		</poly>
+		<poly>
+			<edge startVert="309"/>
+			<edge startVert="310"/>
+			<edge startVert="277"/>
+			<edge startVert="307"/>
+			<edge startVert="308"/>
+		</poly>
+		<poly>
+			<edge startVert="288"/>
+			<edge startVert="264"/>
+			<edge startVert="415"/>
+		</poly>
+		<poly>
+			<edge startVert="395"/>
+			<edge startVert="285"/>
+			<edge startVert="393"/>
+			<edge startVert="394"/>
+		</poly>
+		<poly>
+			<edge startVert="404"/>
+			<edge startVert="405"/>
+			<edge startVert="406"/>
+			<edge startVert="407"/>
+			<edge startVert="408"/>
+			<edge startVert="403"/>
+		</poly>
+		<poly>
+			<edge startVert="253"/>
+			<edge startVert="408"/>
+			<edge startVert="409"/>
+		</poly>
+		<poly>
+			<edge startVert="413"/>
+			<edge startVert="414"/>
+			<edge startVert="287"/>
+			<edge startVert="411"/>
+			<edge startVert="412"/>
+		</poly>
+		<poly>
+			<edge startVert="388"/>
+			<edge startVert="244"/>
+			<edge startVert="387"/>
+		</poly>
+		<poly>
+			<edge startVert="416"/>
+			<edge startVert="417"/>
+			<edge startVert="418"/>
+			<edge startVert="289"/>
+			<edge startVert="288"/>
+		</poly>
+		<poly>
+			<edge startVert="265"/>
+			<edge startVert="289"/>
+			<edge startVert="419"/>
+		</poly>
+		<poly>
+			<edge startVert="290"/>
+			<edge startVert="271"/>
+			<edge startVert="420"/>
+		</poly>
+		<poly>
+			<edge startVert="390"/>
+			<edge startVert="391"/>
+			<edge startVert="392"/>
+			<edge startVert="388"/>
+			<edge startVert="389"/>
+		</poly>
+		<poly>
+			<edge startVert="399"/>
+			<edge startVert="400"/>
+			<edge startVert="401"/>
+			<edge startVert="402"/>
+			<edge startVert="403"/>
+			<edge startVert="286"/>
+			<edge startVert="396"/>
+			<edge startVert="397"/>
+			<edge startVert="398"/>
+		</poly>
+		<poly>
+			<edge startVert="229" connection="24"/>
+			<edge startVert="379"/>
+			<edge startVert="240"/>
+			<edge startVert="241"/>
+		</poly>
+		<poly>
+			<edge startVert="221" connection="17"/>
+			<edge startVert="349"/>
+			<edge startVert="225"/>
+			<edge startVert="226"/>
+		</poly>
+		<poly>
+			<edge startVert="200" connection="5"/>
+			<edge startVert="320"/>
+			<edge startVert="187"/>
+			<edge startVert="188"/>
+		</poly>
+		<poly>
+			<edge startVert="323"/>
+			<edge startVert="184"/>
+			<edge startVert="185"/>
+		</poly>
+		<poly>
+			<edge startVert="170"/>
+			<edge startVert="229"/>
+			<edge startVert="169"/>
+			<edge startVert="273" connection="1"/>
+			<edge startVert="274"/>
+		</poly>
+		<poly>
+			<edge startVert="158"/>
+			<edge startVert="176"/>
+			<edge startVert="165"/>
+		</poly>
+		<poly>
+			<edge startVert="379"/>
+			<edge startVert="195"/>
+			<edge startVert="196"/>
+		</poly>
+		<poly>
+			<edge startVert="202"/>
+			<edge startVert="213"/>
+			<edge startVert="214"/>
+		</poly>
+		<poly>
+			<edge startVert="197" connection="7"/>
+			<edge startVert="307"/>
+			<edge startVert="236"/>
+		</poly>
+		<poly>
+			<edge startVert="212"/>
+			<edge startVert="329"/>
+			<edge startVert="211"/>
+		</poly>
+		<poly>
+			<edge startVert="161"/>
+			<edge startVert="284"/>
+			<edge startVert="160"/>
+		</poly>
+		<poly>
+			<edge startVert="168"/>
+			<edge startVert="269"/>
+			<edge startVert="270"/>
+		</poly>
+		<poly>
+			<edge startVert="168"/>
+			<edge startVert="268"/>
+			<edge startVert="269" connection="50"/>
+		</poly>
+		<poly>
+			<edge startVert="169"/>
+			<edge startVert="242"/>
+			<edge startVert="243"/>
+			<edge startVert="267"/>
+			<edge startVert="268" connection="51"/>
+			<edge startVert="168"/>
+		</poly>
+		<poly>
+			<edge startVert="244"/>
+			<edge startVert="265"/>
+			<edge startVert="266"/>
+		</poly>
+		<poly>
+			<edge startVert="288" connection="34"/>
+			<edge startVert="289" connection="35"/>
+			<edge startVert="265" connection="53"/>
+			<edge startVert="244"/>
+			<edge startVert="264" connection="28"/>
+		</poly>
+		<poly>
+			<edge startVert="261"/>
+			<edge startVert="262"/>
+			<edge startVert="388"/>
+		</poly>
+		<poly>
+			<edge startVert="261" connection="55"/>
+			<edge startVert="388" connection="37"/>
+			<edge startVert="392"/>
+			<edge startVert="260"/>
+		</poly>
+		<poly>
+			<edge startVert="259"/>
+			<edge startVert="260" connection="56"/>
+			<edge startVert="392"/>
+		</poly>
+		<poly>
+			<edge startVert="257"/>
+			<edge startVert="258"/>
+			<edge startVert="285"/>
+		</poly>
+		<poly>
+			<edge startVert="285" connection="29"/>
+			<edge startVert="395"/>
+			<edge startVert="256"/>
+			<edge startVert="257" connection="58"/>
+		</poly>
+		<poly>
+			<edge startVert="255"/>
+			<edge startVert="256" connection="59"/>
+			<edge startVert="395"/>
+			<edge startVert="245"/>
+		</poly>
+		<poly>
+			<edge startVert="249"/>
+			<edge startVert="410"/>
+			<edge startVert="248"/>
+		</poly>
+		<poly>
+			<edge startVert="251"/>
+			<edge startVert="253"/>
+			<edge startVert="254"/>
+			<edge startVert="250"/>
+		</poly>
+		<poly>
+			<edge startVert="403" connection="30"/>
+			<edge startVert="408" connection="31"/>
+			<edge startVert="253"/>
+		</poly>
+		<poly>
+			<edge startVert="286" connection="38"/>
+			<edge startVert="403"/>
+			<edge startVert="252"/>
+		</poly>
+		<poly>
+			<edge startVert="252" connection="64"/>
+			<edge startVert="403" connection="63"/>
+			<edge startVert="253" connection="62"/>
+			<edge startVert="251"/>
+		</poly>
+		<poly>
+			<edge startVert="410" connection="61"/>
+			<edge startVert="249"/>
+			<edge startVert="250" connection="62"/>
+			<edge startVert="254"/>
+		</poly>
+		<poly>
+			<edge startVert="410"/>
+			<edge startVert="411"/>
+			<edge startVert="247"/>
+			<edge startVert="248" connection="61"/>
+		</poly>
+		<poly>
+			<edge startVert="247" connection="67"/>
+			<edge startVert="411" connection="32"/>
+			<edge startVert="287"/>
+			<edge startVert="246"/>
+		</poly>
+		<poly>
+			<edge startVert="287"/>
+			<edge startVert="255" connection="60"/>
+			<edge startVert="245"/>
+			<edge startVert="246" connection="68"/>
+		</poly>
+		<poly>
+			<edge startVert="285" connection="58"/>
+			<edge startVert="258"/>
+			<edge startVert="259" connection="57"/>
+			<edge startVert="392"/>
+		</poly>
+		<poly>
+			<edge startVert="263"/>
+			<edge startVert="388" connection="55"/>
+			<edge startVert="262"/>
+		</poly>
+		<poly>
+			<edge startVert="264" connection="54"/>
+			<edge startVert="244" connection="33"/>
+			<edge startVert="388" connection="71"/>
+			<edge startVert="263"/>
+		</poly>
+		<poly>
+			<edge startVert="267" connection="52"/>
+			<edge startVert="243"/>
+			<edge startVert="244" connection="53"/>
+			<edge startVert="266"/>
+		</poly>
+		<poly>
+			<edge startVert="241"/>
+			<edge startVert="242" connection="52"/>
+			<edge startVert="169" connection="43"/>
+			<edge startVert="229" connection="39"/>
+		</poly>
+		<poly>
+			<edge startVert="379"/>
+			<edge startVert="239"/>
+			<edge startVert="240" connection="39"/>
+		</poly>
+		<poly>
+			<edge startVert="379"/>
+			<edge startVert="238"/>
+			<edge startVert="239" connection="75"/>
+		</poly>
+		<poly>
+			<edge startVert="237"/>
+			<edge startVert="238"/>
+			<edge startVert="197"/>
+		</poly>
+		<poly>
+			<edge startVert="197" connection="47"/>
+			<edge startVert="236"/>
+			<edge startVert="237" connection="77"/>
+		</poly>
+		<poly>
+			<edge startVert="233"/>
+			<edge startVert="234"/>
+			<edge startVert="277"/>
+		</poly>
+		<poly>
+			<edge startVert="230"/>
+			<edge startVert="192"/>
+			<edge startVert="193"/>
+			<edge startVert="385"/>
+		</poly>
+		<poly>
+			<edge startVert="379" connection="25"/>
+			<edge startVert="382"/>
+			<edge startVert="195" connection="45"/>
+		</poly>
+		<poly>
+			<edge startVert="226"/>
+			<edge startVert="227"/>
+			<edge startVert="220"/>
+			<edge startVert="221" connection="40"/>
+		</poly>
+		<poly>
+			<edge startVert="224"/>
+			<edge startVert="225" connection="40"/>
+			<edge startVert="349"/>
+			<edge startVert="222"/>
+		</poly>
+		<poly>
+			<edge startVert="283" connection="18"/>
+			<edge startVert="366" connection="19"/>
+			<edge startVert="223"/>
+		</poly>
+		<poly>
+			<edge startVert="222"/>
+			<edge startVert="283" connection="84"/>
+			<edge startVert="223"/>
+			<edge startVert="224" connection="83"/>
+		</poly>
+		<poly>
+			<edge startVert="182"/>
+			<edge startVert="219"/>
+			<edge startVert="220"/>
+		</poly>
+		<poly>
+			<edge startVert="300"/>
+			<edge startVert="217"/>
+			<edge startVert="218"/>
+		</poly>
+		<poly>
+			<edge startVert="302"/>
+			<edge startVert="215"/>
+			<edge startVert="216"/>
+		</poly>
+		<poly>
+			<edge startVert="214"/>
+			<edge startVert="215" connection="88"/>
+			<edge startVert="302"/>
+			<edge startVert="183"/>
+		</poly>
+		<poly>
+			<edge startVert="202" connection="46"/>
+			<edge startVert="214" connection="89"/>
+			<edge startVert="183"/>
+			<edge startVert="201"/>
+		</poly>
+		<poly>
+			<edge startVert="203"/>
+			<edge startVert="347"/>
+			<edge startVert="213" connection="46"/>
+			<edge startVert="202"/>
+		</poly>
+		<poly>
+			<edge startVert="204" connection="11"/>
+			<edge startVert="329" connection="48"/>
+			<edge startVert="212" connection="15"/>
+			<edge startVert="347"/>
+		</poly>
+		<poly>
+			<edge startVert="329"/>
+			<edge startVert="210"/>
+			<edge startVert="211" connection="48"/>
+		</poly>
+		<poly>
+			<edge startVert="209"/>
+			<edge startVert="210"/>
+			<edge startVert="332"/>
+		</poly>
+		<poly>
+			<edge startVert="334" connection="13"/>
+			<edge startVert="281"/>
+			<edge startVert="207"/>
+		</poly>
+		<poly>
+			<edge startVert="333"/>
+			<edge startVert="334" connection="95"/>
+			<edge startVert="207"/>
+		</poly>
+		<poly>
+			<edge startVert="333" connection="96"/>
+			<edge startVert="207"/>
+			<edge startVert="282" connection="14"/>
+			<edge startVert="208"/>
+			<edge startVert="206"/>
+		</poly>
+		<poly>
+			<edge startVert="208"/>
+			<edge startVert="205"/>
+			<edge startVert="206" connection="97"/>
+		</poly>
+		<poly>
+			<edge startVert="332"/>
+			<edge startVert="205" connection="98"/>
+			<edge startVert="208"/>
+			<edge startVert="209" connection="94"/>
+		</poly>
+		<poly>
+			<edge startVert="329" connection="12"/>
+			<edge startVert="332" connection="94"/>
+			<edge startVert="210" connection="93"/>
+		</poly>
+		<poly>
+			<edge startVert="347" connection="91"/>
+			<edge startVert="203"/>
+			<edge startVert="204" connection="92"/>
+		</poly>
+		<poly>
+			<edge startVert="200" connection="41"/>
+			<edge startVert="188"/>
+			<edge startVert="189"/>
+			<edge startVert="199"/>
+		</poly>
+		<poly>
+			<edge startVert="280" connection="9"/>
+			<edge startVert="199" connection="102"/>
+			<edge startVert="189"/>
+			<edge startVert="190"/>
+		</poly>
+		<poly>
+			<edge startVert="198"/>
+			<edge startVert="278" connection="8"/>
+			<edge startVert="279"/>
+			<edge startVert="280"/>
+			<edge startVert="232"/>
+		</poly>
+		<poly>
+			<edge startVert="277"/>
+			<edge startVert="198" connection="104"/>
+			<edge startVert="232"/>
+			<edge startVert="233" connection="79"/>
+		</poly>
+		<poly>
+			<edge startVert="307" connection="27"/>
+			<edge startVert="277" connection="79"/>
+			<edge startVert="234"/>
+		</poly>
+		<poly>
+			<edge startVert="307" connection="106"/>
+			<edge startVert="234"/>
+			<edge startVert="235"/>
+		</poly>
+		<poly>
+			<edge startVert="236" connection="47"/>
+			<edge startVert="307" connection="107"/>
+			<edge startVert="235"/>
+		</poly>
+		<poly>
+			<edge startVert="238" connection="76"/>
+			<edge startVert="379" connection="45"/>
+			<edge startVert="196"/>
+			<edge startVert="197" connection="77"/>
+		</poly>
+		<poly>
+			<edge startVert="194"/>
+			<edge startVert="195" connection="81"/>
+			<edge startVert="382"/>
+		</poly>
+		<poly>
+			<edge startVert="194" connection="110"/>
+			<edge startVert="382" connection="26"/>
+			<edge startVert="385" connection="80"/>
+			<edge startVert="193"/>
+		</poly>
+		<poly>
+			<edge startVert="192" connection="80"/>
+			<edge startVert="230"/>
+			<edge startVert="231"/>
+			<edge startVert="191"/>
+		</poly>
+		<poly>
+			<edge startVert="191" connection="112"/>
+			<edge startVert="231" connection="6"/>
+			<edge startVert="232" connection="104"/>
+			<edge startVert="280" connection="103"/>
+			<edge startVert="190"/>
+		</poly>
+		<poly>
+			<edge startVert="320"/>
+			<edge startVert="186"/>
+			<edge startVert="187" connection="41"/>
+		</poly>
+		<poly>
+			<edge startVert="186" connection="114"/>
+			<edge startVert="320" connection="10"/>
+			<edge startVert="323" connection="42"/>
+			<edge startVert="185"/>
+		</poly>
+		<poly>
+			<edge startVert="184" connection="42"/>
+			<edge startVert="323" connection="4"/>
+			<edge startVert="201" connection="90"/>
+			<edge startVert="183"/>
+		</poly>
+		<poly>
+			<edge startVert="217" connection="87"/>
+			<edge startVert="300" connection="16"/>
+			<edge startVert="302" connection="88"/>
+			<edge startVert="216"/>
+		</poly>
+		<poly>
+			<edge startVert="218"/>
+			<edge startVert="219" connection="86"/>
+			<edge startVert="182" connection="21"/>
+			<edge startVert="300" connection="87"/>
+		</poly>
+		<poly>
+			<edge startVert="228"/>
+			<edge startVert="182" connection="86"/>
+			<edge startVert="220" connection="82"/>
+			<edge startVert="227"/>
+		</poly>
+		<poly>
+			<edge startVert="182" connection="119"/>
+			<edge startVert="228" connection="20"/>
+			<edge startVert="370"/>
+			<edge startVert="181"/>
+		</poly>
+		<poly>
+			<edge startVert="180"/>
+			<edge startVert="181" connection="120"/>
+			<edge startVert="370"/>
+		</poly>
+		<poly>
+			<edge startVert="370"/>
+			<edge startVert="284"/>
+			<edge startVert="179"/>
+			<edge startVert="180" connection="121"/>
+		</poly>
+		<poly>
+			<edge startVert="163"/>
+			<edge startVert="164"/>
+			<edge startVert="177"/>
+			<edge startVert="276" connection="3"/>
+			<edge startVert="298"/>
+		</poly>
+		<poly>
+			<edge startVert="175"/>
+			<edge startVert="166"/>
+			<edge startVert="176" connection="44"/>
+			<edge startVert="158"/>
+			<edge startVert="159"/>
+		</poly>
+		<poly>
+			<edge startVert="160"/>
+			<edge startVert="175" connection="124"/>
+			<edge startVert="159"/>
+		</poly>
+		<poly>
+			<edge startVert="173"/>
+			<edge startVert="275" connection="2"/>
+			<edge startVert="174"/>
+		</poly>
+		<poly>
+			<edge startVert="172"/>
+			<edge startVert="173" connection="126"/>
+			<edge startVert="174"/>
+			<edge startVert="376"/>
+		</poly>
+		<poly>
+			<edge startVert="171"/>
+			<edge startVert="172" connection="127"/>
+			<edge startVert="376"/>
+		</poly>
+		<poly>
+			<edge startVert="170"/>
+			<edge startVert="171" connection="128"/>
+			<edge startVert="376"/>
+		</poly>
+		<poly>
+			<edge startVert="376" connection="23"/>
+			<edge startVert="229" connection="43"/>
+			<edge startVert="170" connection="129"/>
+		</poly>
+		<poly>
+			<edge startVert="168" connection="50"/>
+			<edge startVert="270"/>
+			<edge startVert="271"/>
+			<edge startVert="167"/>
+		</poly>
+		<poly>
+			<edge startVert="167" connection="131"/>
+			<edge startVert="271" connection="36"/>
+			<edge startVert="290"/>
+			<edge startVert="176" connection="124"/>
+			<edge startVert="166" connection="0"/>
+			<edge startVert="272"/>
+		</poly>
+		<poly>
+			<edge startVert="164"/>
+			<edge startVert="165" connection="44"/>
+			<edge startVert="176"/>
+			<edge startVert="177" connection="123"/>
+		</poly>
+		<poly>
+			<edge startVert="162"/>
+			<edge startVert="163" connection="123"/>
+			<edge startVert="298"/>
+			<edge startVert="178"/>
+		</poly>
+		<poly>
+			<edge startVert="161"/>
+			<edge startVert="162" connection="134"/>
+			<edge startVert="178"/>
+			<edge startVert="179" connection="122"/>
+			<edge startVert="284" connection="49"/>
+		</poly>
+		<poly>
+			<edge startVert="174"/>
+			<edge startVert="175" connection="125"/>
+			<edge startVert="160" connection="49"/>
+			<edge startVert="284" connection="22"/>
+			<edge startVert="376" connection="127"/>
+		</poly>
+	</mappingTo2D>
+</unobstructedSpace>

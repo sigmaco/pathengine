@@ -1,0 +1,3 @@
+project/testbedApp/BackgroundLoading.cpp
+sampleShared/Error.cpp
+sampleShared/LoadBinary.cpp

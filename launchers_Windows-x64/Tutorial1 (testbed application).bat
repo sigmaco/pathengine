@@ -1,0 +1,1 @@
+..\build\x64\Release\dxExe\TestBed app=..\build\x64\Release\testbedApp\Tutorial1 ..\build\x64\Release\dll\

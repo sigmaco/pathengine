@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<VisualStudioUserFile ProjectType="Visual C++" Version="9,00">
+	<Configurations>
+		<Configuration Name="Debug|Win32">
+			<DebugSettings WorkingDirectory="..\..\bin"/>
+		</Configuration>
+		<Configuration Name="DebugDLL|Win32">
+			<DebugSettings WorkingDirectory="..\..\bin"/>
+		</Configuration>
+		<Configuration Name="Release|Win32">
+			<DebugSettings WorkingDirectory="..\..\bin"/>
+		</Configuration>
+		<Configuration Name="ReleaseDLL|Win32">
+			<DebugSettings WorkingDirectory="..\..\bin"/>
+		</Configuration>
+	</Configurations>
+</VisualStudioUserFile>

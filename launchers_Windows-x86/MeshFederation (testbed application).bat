@@ -1,0 +1,1 @@
+..\build\Win32\Release\dxExe\TestBed app=..\build\Win32\Release\testbedApp\MeshFederation ..\build\Win32\Release\dll\

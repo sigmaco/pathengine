@@ -1,0 +1,32 @@
+>solidObjects
+    >solidObject
+        >point .x -4000 .y -1000 .z 0 <
+        >point .x 4000 .y -1000 .z 0 <
+        >point .x -4000 .y 1000 .z 0 <
+        >point .x 4000 .y 1000 .z 0 <
+        >point .x -4000 .y -1000 .z 4000 <
+        >point .x 4000 .y -1000 .z 4000 <
+        >point .x -4000 .y 1000 .z 4000 <
+        >point .x 4000 .y 1000 .z 4000 <
+    <
+    >solidObject
+        >point .x -4000 .y -1000 .z 4000 <
+        >point .x 4000 .y -1000 .z 4000 <
+        >point .x -4000 .y -700 .z 4000 <
+        >point .x 4000 .y -700 .z 4000 <
+        >point .x -4000 .y -1000 .z 5000 <
+        >point .x 4000 .y -1000 .z 5000 <
+        >point .x -4000 .y -700 .z 5000 <
+        >point .x 4000 .y -700 .z 5000 <
+    <
+    >solidObject
+        >point .x -4000 .y 700 .z 4000 <
+        >point .x 4000 .y 700 .z 4000 <
+        >point .x -4000 .y 1000 .z 4000 <
+        >point .x 4000 .y 1000 .z 4000 <
+        >point .x -4000 .y 700 .z 5000 <
+        >point .x 4000 .y 700 .z 5000 <
+        >point .x -4000 .y 1000 .z 5000 <
+        >point .x 4000 .y 1000 .z 5000 <
+    <
+<

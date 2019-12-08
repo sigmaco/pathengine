@@ -1,0 +1,13 @@
+project/testbedApp/CollapsibleGroup.cpp
+project/testbedApp/CollapsibleGroup/AssignTargets.cpp
+project/testbedApp/CollapsibleGroup/AssignToDistanceBasedClusters.cpp
+project/testbedApp/CollapsibleGroup/ClusterMovementOrder.cpp
+project/testbedApp/CollapsibleGroup/ColumnTargetsManager.cpp
+project/testbedApp/CollapsibleGroup/FormationMovementOrder.cpp
+project/testbedApp/CollapsibleGroup/GenerateColumnTargets.cpp
+project/testbedApp/CollapsibleGroup/GetGroupRootPosition.cpp
+project/testbedApp/CollapsibleGroup/RowTargets.cpp
+sampleShared/Error.cpp
+sampleShared/IntegerPoint2D.cpp
+sampleShared/SelectAndMove.cpp
+sampleShared/WaitForFrame.cpp

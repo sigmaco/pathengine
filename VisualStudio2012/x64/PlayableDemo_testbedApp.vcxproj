@@ -1,0 +1,258 @@
+<?xml version="1.0" ?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Debug|x64">
+			<Configuration>
+				Debug
+			</Configuration>
+			<Platform>
+				x64
+			</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Release|x64">
+			<Configuration>
+				Release
+			</Configuration>
+			<Platform>
+				x64
+			</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo\AgitatedBehaviour.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo\BoundedBehaviour.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo\ChaseBehaviour.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo\EngageBehaviour.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo\GameObject.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo\GameState.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo\LimitedDurationBehaviour.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo\MoveDirectlyTowardsBehaviour.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo\PackHunterBehaviour.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo\PathFrequency.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo\Queueing.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo\RescueFromHuntersBehaviour.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo\Resources.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo\RunAwayBehaviour.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo\ScriptBehaviours.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo\SwitchResetterBehaviour.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo\UIController.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo\VisitGreenSceneryBehaviour.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo\WanderBehaviour.cpp"/>
+		<ClCompile Include="..\..\code\project\testbedApp\PlayableDemo\iBehaviour.cpp"/>
+		<ClCompile Include="..\..\code\sampleShared\Error.cpp"/>
+		<ClCompile Include="..\..\code\sampleShared\LoadWhiteSpaceDelimited.cpp"/>
+		<ClCompile Include="..\..\code\sampleShared\MoveAgent.cpp"/>
+		<ClCompile Include="..\..\code\sampleShared\SimpleDOM.cpp"/>
+		<ClCompile Include="..\..\code\sampleShared\Sliding.cpp"/>
+		<ClCompile Include="..\..\code\sampleShared\WaitForFrame.cpp"/>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>
+			{AB33A80C-3459-6143-31FD-9318AA1D4B18}
+		</ProjectGuid>
+		<MinimumVisualStudioVersion>
+			11.0
+		</MinimumVisualStudioVersion>
+		<PlatformToolset>
+			v110
+		</PlatformToolset>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+		<ConfigurationType>
+			DynamicLibrary
+		</ConfigurationType>
+		<UseDebugLibraries>
+			true
+		</UseDebugLibraries>
+		<EmbedManifest>
+			false
+		</EmbedManifest>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+		<ConfigurationType>
+			DynamicLibrary
+		</ConfigurationType>
+		<UseDebugLibraries>
+			false
+		</UseDebugLibraries>
+		<WholeProgramOptimization>
+			true
+		</WholeProgramOptimization>
+		<EmbedManifest>
+			false
+		</EmbedManifest>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<IntDir>
+			../../build/$(PlatformName)/$(Configuration)/intermediate/
+		</IntDir>
+		<OutDir>
+			../../build/$(PlatformName)/$(Configuration)/testbedApp/
+		</OutDir>
+		<TargetName>
+			PlayableDemo
+		</TargetName>
+		<LinkIncremental>
+			true
+		</LinkIncremental>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<IntDir>
+			../../build/$(PlatformName)/$(Configuration)/intermediate/
+		</IntDir>
+		<OutDir>
+			../../build/$(PlatformName)/$(Configuration)/testbedApp/
+		</OutDir>
+		<TargetName>
+			PlayableDemo
+		</TargetName>
+		<LinkIncremental>
+			false
+		</LinkIncremental>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<Link>
+			<GenerateDebugInformation>
+				true
+			</GenerateDebugInformation>
+			<GenerateWindowsMetadata>
+				false
+			</GenerateWindowsMetadata>
+			<OutputFile>
+				$(OutDir)PlayableDemo.dll
+			</OutputFile>
+			<AdditionalOptions>
+				 %(AdditionalOptions)
+			</AdditionalOptions>
+			<TargetMachine>
+				MachineX64
+			</TargetMachine>
+			<SubSystem>
+				Windows
+			</SubSystem>
+		</Link>
+		<CLCompile>
+			<PrecompiledHeader>
+				NotUsing
+			</PrecompiledHeader>
+			<DebugInformationFormat>
+				OldStyle
+			</DebugInformationFormat>
+			<WarningLevel>
+				Level3
+			</WarningLevel>
+			<CompileAsWinRT>
+				false
+			</CompileAsWinRT>
+			<AdditionalIncludeDirectories>
+				../../code/platform_x64;../../code
+			</AdditionalIncludeDirectories>
+			<TreatWarningAsError>
+				true
+			</TreatWarningAsError>
+			<ExceptionHandling>
+				false
+			</ExceptionHandling>
+			<StringPooling>
+				true
+			</StringPooling>
+			<MinimalRebuild>
+				false
+			</MinimalRebuild>
+			<ObjectFileName>
+				$(IntDir)d/d/d/d/%(RelativeDir)/
+			</ObjectFileName>
+			<PreprocessorDefinitions>
+				_HAS_EXCEPTIONS=0;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;ASSERTIONS_ON;%(PreprocessorDefinitions)
+			</PreprocessorDefinitions>
+			<Optimization>
+				Disabled
+			</Optimization>
+			<RuntimeLibrary>
+				MultiThreadedDebug
+			</RuntimeLibrary>
+		</CLCompile>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<Link>
+			<GenerateDebugInformation>
+				true
+			</GenerateDebugInformation>
+			<GenerateWindowsMetadata>
+				false
+			</GenerateWindowsMetadata>
+			<OutputFile>
+				$(OutDir)PlayableDemo.dll
+			</OutputFile>
+			<AdditionalOptions>
+				 %(AdditionalOptions)
+			</AdditionalOptions>
+			<EnableCOMDATFolding>
+				true
+			</EnableCOMDATFolding>
+			<OptimizeReferences>
+				true
+			</OptimizeReferences>
+			<TargetMachine>
+				MachineX64
+			</TargetMachine>
+			<SubSystem>
+				Windows
+			</SubSystem>
+		</Link>
+		<CLCompile>
+			<PrecompiledHeader>
+				NotUsing
+			</PrecompiledHeader>
+			<DebugInformationFormat>
+				OldStyle
+			</DebugInformationFormat>
+			<WarningLevel>
+				Level3
+			</WarningLevel>
+			<CompileAsWinRT>
+				false
+			</CompileAsWinRT>
+			<AdditionalIncludeDirectories>
+				../../code/platform_x64;../../code
+			</AdditionalIncludeDirectories>
+			<TreatWarningAsError>
+				true
+			</TreatWarningAsError>
+			<ExceptionHandling>
+				false
+			</ExceptionHandling>
+			<StringPooling>
+				true
+			</StringPooling>
+			<MinimalRebuild>
+				false
+			</MinimalRebuild>
+			<ObjectFileName>
+				$(IntDir)d/d/d/d/%(RelativeDir)/
+			</ObjectFileName>
+			<PreprocessorDefinitions>
+				_HAS_EXCEPTIONS=0;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)
+			</PreprocessorDefinitions>
+			<Optimization>
+				MaxSpeed
+			</Optimization>
+			<FunctionLevelLinking>
+				true
+			</FunctionLevelLinking>
+			<IntrinsicFunctions>
+				true
+			</IntrinsicFunctions>
+			<InlineFunctionExpansion>
+				AnySuitable
+			</InlineFunctionExpansion>
+			<RuntimeLibrary>
+				MultiThreaded
+			</RuntimeLibrary>
+		</CLCompile>
+	</ItemDefinitionGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+</Project>

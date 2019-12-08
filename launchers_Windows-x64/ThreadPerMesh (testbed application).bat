@@ -1,0 +1,1 @@
+..\build\x64\Release\dxExe\TestBed app=..\build\x64\Release\testbedApp\ThreadPerMesh ..\build\x64\Release\dll\

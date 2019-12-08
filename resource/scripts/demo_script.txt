@@ -1,0 +1,864 @@
+>script
+
+ >sounds
+  >sound .name switch_up.wav <
+  >sound .name switch_down.wav <
+  >sound .name shock.wav <
+  >sound .name win.wav <
+  >sound .name sshchkchk.wav <
+  >sound .name guttural.wav <
+  >sound .name agitatedsquawk.wav <
+  >sound .name twitter.wav <
+  >sound .name laughing.wav <
+  >sound .name frightened.wav <
+  >sound .name finalwin.wav <
+ <
+
+ >shapes
+  >shape .vertices 16,40,40,16,40,-16,16,-40,-16,-40,-40,-16,-40,16,-16,40 <
+  >shape .vertices -28,-28,-28,28,28,28,28,-28 <
+  >shape .vertices 22,53,53,22,53,-22,22,-53,-22,-53,-53,-22,-53,22,-22,53 <
+  >shape .vertices -10,10,10,10,10,-10,-10,-10 <
+  >shape .vertices -50,-50,-50,50,70,60,40,-60 <
+  >shape .vertices -110,-110,-110,110,110,110,110,-110 <
+ <
+
+ >templates
+   >player
+    .shape 0
+    .colour white
+    .height 40
+    .headingIndicatorColour orange
+    .headingIndicatorSize 60
+    .speed 30.0
+    .isCollisionChecker true
+    .isSwitch true
+    .requiresPathfindPreprocess true
+    >defaultBehaviour .type uiControl .findClosestUnobstructedPointRange 200 <
+   <
+   >enemy
+    .shape 1
+    .colour purple
+    .height 40
+    .headingIndicatorColour orange
+    .headingIndicatorSize 60
+    .isSwitch true
+    .speed 27.0
+    .defaultTarget player
+    .requiresPathfindPreprocess true
+    >defaultBehaviour .type chase .activationSound 4 <
+   <
+   >fastEnemy
+    .shape 2
+    .colour yellow
+    .height 40
+    .headingIndicatorColour orange
+    .headingIndicatorSize 60
+    .isSwitch true
+    .speed 38.0
+    .defaultTarget player
+    .requiresPathfindPreprocess true
+    >defaultBehaviour .type chase .activationSound 5 .findClosestUnobstructedPointRange 500 <
+   <
+   >hunter
+    .shape 1
+    .colour orange
+    .height 40
+    .headingIndicatorColour yellow
+    .headingIndicatorSize 80
+    .isSwitch true
+    .speed 28.1
+    .defaultTarget player
+    .requiresPathfindPreprocess true
+    >toggled
+     .height 4
+    <
+   <
+   >goal
+    .shape 3
+    .colour pink
+    .height 180
+    .isSwitch true
+   <
+   >marker
+    .startsInvisible true
+   <
+   >pressurePad
+    .colour orange
+    .height 5
+    .isSwitch true
+    >toggled
+     .colour red
+     .height 2
+    <
+   <
+   >hiddenPad
+    .colour blue
+    .height 5
+    .isSwitch true
+    .alpha 0.1
+    >toggled
+     .colour darkblue
+     .height 2
+     .alpha 1.0
+    <
+   <
+   >door
+    .colour red
+    .height 100
+   <
+   >scenery1
+    .colour beige
+    .height 50
+    .burnIn true
+   <
+   >scenery2
+    .colour chartreuse
+    .height 70
+    .burnIn true
+   <
+   >sceneryPurple
+    .colour purple
+    .height 80
+    .burnIn true
+   <
+   >sceneryGreen
+    .colour green
+    .height 30
+    .burnIn true
+   <
+   >helper
+    .shape 1
+    .colour green
+    .height 30
+    .headingIndicatorColour white
+    .headingIndicatorSize 60
+    .speed 33.0
+    .isCollisionChecker true
+    .requiresPathfindPreprocess true
+    .isSwitch true
+    >defaultBehaviour .type visitGreenScenery .engageDistance 500 <
+   <
+   >frightened
+    .shape 1
+    .colour grey
+    .height 30
+    .headingIndicatorColour white
+    .headingIndicatorSize 60
+    .requiresPathfindPreprocess true
+    .isSwitch true
+    .isCollisionChecker true
+    .speed 36.0
+    >toggled
+     .height 4
+    <
+    >defaultBehaviour .type bounded
+        >base .type runAway .distanceAway 1200 <
+        >bound .object marker.switchResetterBound <
+    <
+   <
+   >pushable
+    .shape 4
+    .colour yellow
+    .height 70
+    .isPushable true
+    .requiresCollisionPreprocess true
+   <
+   >bigPushable
+    .shape 5
+    .colour yellow
+    .height 70
+    .isPushable true
+    .requiresCollisionPreprocess true
+   <
+ <templates
+
+ >levels
+
+  >level .mesh triviallevel
+   >initialisation
+    >setFlag .flag timer .value 80 <
+   <
+   >frame
+    >decrement .flag timer <
+    >if >flagInRange .flag timer .rangeStart 41 .rangeEnd 80 <
+     >lookAt .object pressurePad.0 .faceTowards marker.doorCentre .elevation 0.3 <
+    <
+    >if >flagInRange .flag timer .rangeStart 1 .rangeEnd 40 <
+     >lookAt .object marker.doorCentre .faceTowards goal .elevation 0.3 <
+    <
+    >if
+     >and
+      >overlaps .object player .target pressurePad.0 < 
+      >not >isToggled .object pressurePad.0 < <
+     <
+     >setToggled .object pressurePad.0 <
+     >playSound .index 1 <
+     >toggleDoorState .door 0 <
+    <
+    >if
+     >and
+      >not >overlaps .object player .target pressurePad.0 < <
+      >isToggled .object pressurePad.0 <
+     <
+     >clearToggled .object pressurePad.0 <
+     >playSound .index 0 <
+    <
+    >if >overlaps .object player .target goal <
+     >playSound .index 3 <
+     >endLevel .result win <
+    < 
+   <frame 
+  <level
+
+  >level .mesh level1
+   >initialisation <
+   >frame
+    >if
+     >and
+      >doorIsClosed .door 0 <
+      >overlaps .object player .target pressurePad.0 < 
+     <
+     >setToggled .object pressurePad.0 <
+     >playSound .index 1 <
+     >toggleDoorState .door 0 <
+     >toggleDoorState .door 03 <
+    < 
+    >if >overlaps .object player .target goal <
+     >playSound .index 3 <
+     >endLevel .result win <
+    < 
+    >if >overlaps .object player .target enemy <
+     >playSound .index 2 <
+     >endLevel .result lose <
+    <
+   <frame
+  <level
+
+  >level .mesh level1
+   >initialisation <
+   >frame
+    >if
+     >and
+      >doorIsClosed .door 0 <
+      >overlaps .object player .target pressurePad.0 < 
+     <
+     >setToggled .object pressurePad.0 <
+     >playSound .index 1 <
+     >toggleDoorState .door 0 <
+     >toggleDoorState .door 01 <
+     >toggleDoorState .door 02 <
+     >setFlag .flag huntersTimer .value 80 <
+     >setCameraDistance .value 4500.0 <
+    <
+    >decrement .flag huntersTimer <
+    >if >flagEquals .flag huntersTimer .value 61 <
+     >playSound .index 5 <
+     >setBehaviour .object hunter.00 .type packHunter .queueCollisionShape 5 .debugDisplay false <
+    <
+    >if >flagEquals .flag huntersTimer .value 21 <
+     >playSound .index 5 <
+     >setBehaviour .object hunter.01 .type packHunter .queueCollisionShape 5 .debugDisplay false <
+    <
+    >if >overlaps .object player .target goal <
+     >playSound .index 3 <
+     >endLevel .result win <
+    < 
+    >if >overlaps .object player .target hunter.00 <
+     >playSound .index 2 <
+     >endLevel .result lose <
+    <
+    >if >overlaps .object player .target hunter.01 <
+     >playSound .index 2 <
+     >endLevel .result lose <
+    <
+   <frame
+  <level
+
+  >level .mesh level2
+   >initialisation
+    >setFlag .flag timer .value 120 <
+    >setFlag .flag doorTimer .value 280 <
+    >setCameraDistance .value 4500.0 <
+   <
+
+   >frame
+
+    >decrement .flag timer <
+    >if >flagInRange .flag timer .rangeStart 81 .rangeEnd 120 <
+     >lookAt .object goal .faceTowards player .elevation 0.3 <
+    <
+    >if >flagInRange .flag timer .rangeStart 41 .rangeEnd 80 <
+     >lookAt .object enemy .faceTowards player .elevation 0.3 <
+    <
+    >if >flagEquals .flag timer .value 60 <
+     >playSound .index 4 <
+     >setBehaviour .object enemy .type runScriptOnce
+      >behaviour .type moveDirectlyTowards .duration 1 <
+      >behaviour .type agitated .duration 10 .radius 19 <
+     <
+    <
+    >if >flagInRange .flag timer .rangeStart 1 .rangeEnd 40 <
+     >lookAt .object fastEnemy .faceTowards player .elevation 0.3 <
+    <
+    >if >flagEquals .flag timer .value 20 <
+     >playSound .index 5 <
+     >setBehaviour .object fastEnemy .type runScriptOnce
+      >behaviour .type moveDirectlyTowards .duration 1 <
+      >behaviour .type agitated .duration 10 .radius 19 <
+     <
+    <
+    >decrement .flag doorTimer <
+    >if >flagEquals .flag doorTimer .value 141 <
+     >playSound .index 0 <
+    <
+    >if >flagEquals .flag doorTimer .value 121 <
+     >playSound .index 0 <
+    <
+    >if >flagEquals .flag doorTimer .value 101 <
+     >playSound .index 0 <
+    <
+    >if >flagEquals .flag doorTimer .value 81 <
+     >playSound .index 1 <
+     >setDoorOpen .door 2 <
+    <
+    >if >flagEquals .flag doorTimer .value 61 <
+     >playSound .index 0 <
+    <
+    >if >flagEquals .flag doorTimer .value 41 <
+     >playSound .index 0 <
+    <
+    >if >flagEquals .flag doorTimer .value 21 <
+     >playSound .index 0 <
+    <
+    >if >flagEquals .flag doorTimer .value 1 <
+     >playSound .index 1 <
+     >setDoorOpen .door 1 <
+     >setDefaultBehaviour .object enemy <
+     >setDefaultBehaviour .object fastEnemy <
+    <
+
+    >if >not >doorIsOpen .door 0 < <
+     >if >overlaps .object player .target hiddenPad.0 < 
+      >setToggled .object hiddenPad.0 <
+      >playSound .index 1 <
+      >setDoorOpen .door 0 <
+     <
+     >if >overlaps .object player .target hiddenPad.1 < 
+      >setToggled .object hiddenPad.1 <
+      >playSound .index 1 <
+      >setDoorOpen .door 0 <
+     <
+     >if >overlaps .object player .target hiddenPad.2 < 
+      >setToggled .object hiddenPad.2 <
+      >playSound .index 1 <
+      >setDoorOpen .door 0 <
+     <
+     >if >overlaps .object player .target pressurePad.1 < 
+      >setToggled .object pressurePad.1 <
+      >playSound .index 1 <
+      >setDoorOpen .door 0 <
+     <
+     >if >overlaps .object player .target pressurePad.2 < 
+      >setToggled .object pressurePad.2 <
+      >playSound .index 1 <
+      >setDoorOpen .door 0 <
+     <
+     >if >overlaps .object player .target pressurePad.3 < 
+      >setToggled .object pressurePad.3 <
+      >playSound .index 1 <
+      >setDoorOpen .door 0 <
+     <
+     >if >overlaps .object player .target pressurePad.04 < 
+      >setToggled .object pressurePad.04 <
+      >playSound .index 1 <
+      >setDoorOpen .door 0 <
+     <
+     >if >overlaps .object player .target pressurePad.05 < 
+      >setToggled .object pressurePad.05 <
+      >playSound .index 1 <
+      >setDoorOpen .door 0 <
+     <
+    <
+
+    >if >overlaps .object player .target goal <
+     >playSound .index 3 <
+     >endLevel .result win <
+    < 
+    >if >overlaps .object player .target enemy <
+     >playSound .index 2 <
+     >endLevel .result lose <
+    <
+    >if >overlaps .object player .target fastEnemy <
+     >playSound .index 2 <
+     >endLevel .result lose <
+    <
+   <frame
+ 
+  <level
+
+  >level .mesh biglevel
+
+   >initialisation
+    >setColour .object pressurePad.green .value green <
+    >setToggledColour .object pressurePad.green .value darkgreen <
+    >setColour .object door.green:closed .value green <
+    >setColour .object door.green:open .value green <
+    >setColour .object pressurePad.blue .value blue <
+    >setToggledColour .object pressurePad.blue .value darkblue <
+    >setColour .object pressurePad.blue01 .value blue <
+    >setToggledColour .object pressurePad.blue01 .value darkblue <
+    >setColour .object door.blue:closed .value blue <
+    >setColour .object door.blue:open .value blue <
+    >setColour .object pressurePad.purple00 .value pink <
+    >setToggledColour .object pressurePad.purple00 .value purple <
+    >setColour .object pressurePad.purple01 .value pink <
+    >setToggledColour .object pressurePad.purple01 .value purple <
+    >setColour .object pressurePad.purple02 .value pink <
+    >setToggledColour .object pressurePad.purple02 .value purple <
+    >setColour .object door.purple00:closed .value purple <
+    >setColour .object door.purple00:open .value purple <
+    >setColour .object door.purple01:closed .value purple <
+    >setColour .object door.purple01:open .value purple <
+    >setBehaviour .object helper .type repeatScript
+     >waitUntil >inRange .object helper .object2 player .range 2000 < <
+     >playSound .index 6 <
+     >setTarget .object helper .target player <
+     >behaviour .type moveDirectlyTowards <
+     >playSound .index 6 <
+     >behaviour .type agitated .duration 20 .radius 30 <
+     >behaviour .type wait .duration 30 <
+     >setTarget .object helper .target door.green:closed <
+     >behaviour .type engage .distance 200 <
+     >playSound .index 6 <
+     >behaviour .type agitated .duration 20 .radius 30 <
+     >behaviour .type wait .duration 30 <
+     >behaviour .type wander .duration 200 .range 600 <
+    <setBehaviour
+    >setTarget .object frightened .target player <
+   <initialisation
+
+   >frame
+
+    >if
+     >and
+      >not >isToggled .object pressurePad.00 < <
+      >or
+       >overlaps .object player .target pressurePad.00 < 
+       >overlaps .object pushable .target pressurePad.00 < 
+      <
+     <
+     >setToggled .object pressurePad.00 <
+     >toggleDoorState .door 00 <
+     >playSound .index 1 <
+    <
+    >if
+     >and
+      >isToggled .object pressurePad.00 <
+      >not
+       >or
+        >overlaps .object player .target pressurePad.00 < 
+        >overlaps .object pushable .target pressurePad.00 < 
+       <
+      <
+     <
+     >clearToggled .object pressurePad.00 <
+     >toggleDoorState .door 00 <
+     >playSound .index 1 <
+    <
+
+    >if
+     >and
+      >not >isToggled .object pressurePad.green < <
+      >overlaps .object player .target pressurePad.green < 
+     <
+     >setToggled .object pressurePad.green <
+     >playSound .index 1 <
+     >toggleDoorState .door green <
+     >setBehaviour .object helper .type runScriptOnce
+      >setTarget .object helper .target door.green:closed <
+      >behaviour .type moveDirectlyTowards .duration 20 <
+      >behaviour .type wait .duration 20 <
+      >setTarget .object helper .target player <
+      >behaviour .type moveDirectlyTowards .duration 20 <
+      >playSound .index 7 <      
+      >while
+       >not >inRange .object helper .object2 pressurePad.blue .range 2000 < <
+       >behaviour .object helper .type chase .engageDistance 200 <
+      <while
+      >playSound .index 7 <
+      >setTarget .object helper .target pressurePad.blue <
+      >behaviour .object helper .type engage <
+      >setTarget .object helper .target player <
+      >behaviour .object helper .type chase .engageDistance 200 <
+     <setBehaviour
+    <if
+
+    >if
+     >and
+      >flagNotSet .flag wentToBlue <
+      >inRange .object helper .object2 pressurePad.blue .range 2600 <
+     <
+     >setFlag .flag wentToBlue <
+     >setBehaviour .object helper .type runScriptOnce
+      >playSound .index 7 <
+      >setTarget .object helper .target pressurePad.blue <
+      >behaviour .object helper .type engage <
+     <
+    <
+    >if
+     >and
+      >flagNotSet .flag wentToBlue01 <
+      >inRange .object helper .object2 pressurePad.blue01 .range 2200 <
+     <
+     >setFlag .flag wentToBlue01 <
+     >setBehaviour .object helper .type runScriptOnce
+      >playSound .index 7 <
+      >setTarget .object helper .target pressurePad.blue01 <
+      >behaviour .object helper .type engage <
+     <
+    <
+
+    >if
+     >and
+      >not >isToggled .object pressurePad.blue < <
+      >overlaps .object helper .target pressurePad.blue < 
+     <
+     >setToggled .object pressurePad.blue <
+     >playSound .index 0 <
+     >setTarget .object helper .target player <
+     >setBehaviour .object helper .type chase .engageDistance 200 <
+    <
+    >if
+     >and
+      >not >isToggled .object pressurePad.blue01 < <
+      >overlaps .object helper .target pressurePad.blue01 < 
+     <
+     >setToggled .object pressurePad.blue01 <
+     >playSound .index 0 <
+     >setTarget .object helper .target player <
+     >setBehaviour .object helper .type chase .engageDistance 200 <
+    <
+    >if
+     >and
+      >doorIsClosed .door blue <
+      >isToggled .object pressurePad.blue <
+      >isToggled .object pressurePad.blue01 <
+     <
+     >toggleDoorState .door blue <
+     >playSound .index 1 <
+    <
+
+    >if
+     >and
+      >flagNotSet .flag helperGoingHome <
+      >inRange .object helper .object2 marker.helperGoesHome .range 2000 <
+     <
+     >setFlag .flag helperGoingHome <
+     >playSound .index 7 <
+     >setBehaviour .object helper .type runScriptOnce
+      >setTarget .object helper .target bigPushable <
+      >behaviour .type engage .distance 250 <
+      >behaviour .type bounded
+       >base .type repeatScript
+        >setTarget .object helper .target marker.helperHomeWaypoint <
+        >behaviour .type engage <
+        >playSound .index 6 <
+        >behaviour .type agitated .duration 20 .radius 30 <
+        >waitUntil >inRange .object helper .object2 player .range 1800 < <
+        >setTarget .object helper .target player <
+        >behaviour .type moveDirectlyTowards .duration 20 .engageDistance 150 <
+        >setTarget .object helper .target marker.helperHomeWaypoint <
+        >behaviour .type engage <
+        >playSound .index 7 <
+        >behaviour .type wait .duration 20 <
+        >setTarget .object helper .target bigPushable <
+        >behaviour .type engage .distance 250 <
+        >playSound .index 6 <
+        >behaviour .type agitated .duration 20 .radius 30 <
+        >setTarget .object helper .target marker.helperHomeWaypoint <
+        >behaviour .type engage <
+        >behaviour .type wander .duration 70 .range 600 <
+        >behaviour .type engage <
+        >setTarget .object helper .target bigPushable <
+        >behaviour .type engage .distance 250 <
+       <
+       >bound .object marker.helperGoHomeBound <
+      <
+     <setBehaviour
+     >setCameraDistance .value 4000.0 <
+    <
+
+    >if
+     >and
+      >flagNotSet .flag helperGotHome <
+      >inRange .object helper .object2 marker.helperHomeWaypoint .range 2000 <
+     <
+     >setFlag .flag helperGotHome <
+     >playSound .index 7 <
+     >setBehaviour .object helper .type visitGreenScenery .engageDistance 500 <
+    <
+
+    >if
+     >and
+      >not >isToggled .object pressurePad.purple00 < <
+      >overlaps .object player .target pressurePad.purple00 < 
+     <
+     >setToggled .object pressurePad.purple00 <
+     >playSound .index 0 <
+    <
+    >if
+     >and
+      >isToggled .object pressurePad.purple00 <
+      >isNotToggled .object frightened <
+      >overlaps .object frightened .target pressurePad.purple00 <
+     <
+     >clearToggled .object pressurePad.purple00 <
+     >playSound .index 0 <
+    <
+
+    >if
+     >and
+      >not >isToggled .object pressurePad.purple01 < <
+      >overlaps .object player .target pressurePad.purple01 < 
+     <
+     >setToggled .object pressurePad.purple01 <
+     >playSound .index 0 <
+    <
+    >if
+     >and
+      >isToggled .object pressurePad.purple01 <
+      >isNotToggled .object frightened <
+      >overlaps .object frightened .target pressurePad.purple01 <
+     <
+     >clearToggled .object pressurePad.purple01 <
+     >playSound .index 0 <
+    <
+
+    >if
+     >and
+      >not >isToggled .object pressurePad.purple02 < <
+      >overlaps .object player .target pressurePad.purple02 < 
+     <
+     >setToggled .object pressurePad.purple02 <
+     >playSound .index 0 <
+    <
+    >if
+     >and
+      >isToggled .object pressurePad.purple02 <
+      >isNotToggled .object frightened <
+      >overlaps .object frightened .target pressurePad.purple02 <
+     <
+     >clearToggled .object pressurePad.purple02 <
+     >playSound .index 0 <
+    <
+
+    >if
+     >and
+      >not >doorIsOpen .door purple00 < <
+      >flagNotSet .flag purpleDoorOpenTimer <
+      >flagNotSet .flag triggeredHunters <
+      >isToggled .object pressurePad.purple00 <
+      >isToggled .object pressurePad.purple01 <
+      >isToggled .object pressurePad.purple02 <
+     <
+     >setFlag .flag purpleDoorOpenTimer .value 390 <
+    <if
+
+    >decrement .flag purpleDoorOpenTimer <
+    >if >flagNotSet .flag purpleDoorOpenedBefore <
+     >if >flagInRange .flag purpleDoorOpenTimer .rangeStart 351 .rangeEnd 390 <
+      >lookAt .object marker.centreOfPurpleDoor .faceTowards player .elevation 0.25 <
+     <
+     >if >flagInRange .flag purpleDoorOpenTimer .rangeStart 1 .rangeEnd 70 <
+      >lookAt .object frightened .faceTowards marker.centreOfPurpleDoor .elevation 0.25 <
+     <
+     >if >flagEquals .flag purpleDoorOpenTimer .value 55 <
+      >playSound .index 9 <
+      >setBehaviour .object frightened .type bounded
+       >base .type switchResetter .radius1 800 .radius2 1000 .radius3 1200 .frightenedSound 9
+        >target .object pressurePad.purple00 <
+        >target .object pressurePad.purple01 <
+        >target .object pressurePad.purple02 <
+       <
+       >bound .object marker.switchResetterBound <
+      <setBehaviour
+     <if
+    <if
+    >if >flagEquals .flag purpleDoorOpenTimer .value 380 <
+     >toggleDoorState .door purple00 <
+     >toggleDoorState .door purple01 <
+     >playSound .index 1 <
+    <if
+    >if >flagEquals .flag purpleDoorOpenTimer .value 1 <
+     >setFlag .flag purpleDoorOpenedBefore <
+    <if
+
+    >if
+     >and
+      >doorIsOpen .door purple00 <
+      >flagNotSet .flag purpleDoorCloseTimer <
+      >not
+       >and
+        >isToggled .object pressurePad.purple00 <
+        >isToggled .object pressurePad.purple01 <
+        >isToggled .object pressurePad.purple02 <
+       <
+      <
+     <
+     >setFlag .flag purpleDoorCloseTimer .value 60 <
+    <if
+
+    >decrement .flag purpleDoorCloseTimer <
+
+    >if >flagEquals .flag purpleDoorCloseTimer .value 30 <
+     >toggleDoorState .door purple00 <
+     >toggleDoorState .door purple01 <
+     >playSound .index 1 <
+    <if
+    >if >flagEquals .flag purpleDoorCloseTimer .value 1 <
+     >setFlag .flag purpleDoorClosedBefore <
+     >playSound .index 8 <
+    <if
+
+    >if
+     >and
+      >flagNotSet .flag triggeredHunters <
+      >inRange .object player .object2 marker.triggerHunters .range 2000 <
+     <
+     >setFlag .flag triggeredHunters <
+     >setFlag .flag huntersTimer .value 260 <
+     >setCameraDistance .value 4700.0 <
+    <
+
+    >if >flagInRange .flag huntersTimer .rangeStart 221 .rangeEnd 260 <
+     >lookAt .object player .faceTowards marker.centreOfPurpleDoor .elevation 0.25 <
+    <
+    >if >flagEquals .flag huntersTimer .value 241 <
+     >playSound .index 1 <
+     >toggleDoorState .door purple00 <
+     >toggleDoorState .door purple01 <
+    <
+    >if >flagInRange .flag huntersTimer .rangeStart 161 .rangeEnd 220 <
+     >lookAt .object goal .faceTowards player .elevation 0.2 .distance 2000.0 <
+    <
+    >if >flagInRange .flag huntersTimer .rangeStart 121 .rangeEnd 160 <
+     >lookAt .object hunter.00 .faceTowards player .elevation 0.2 <
+    <
+    >if >flagEquals .flag huntersTimer .value 141 <
+     >playSound .index 5 <
+     >setBehaviour .object hunter.00 .type packHunter .queueCollisionShape 5 .debugDisplay false <
+    <
+    >if >flagInRange .flag huntersTimer .rangeStart 81 .rangeEnd 120 <
+     >lookAt .object hunter.01 .faceTowards player .elevation 0.2 <
+    <
+    >if >flagEquals .flag huntersTimer .value 101 <
+     >playSound .index 5 <
+     >setBehaviour .object hunter.01 .type packHunter .queueCollisionShape 5 .debugDisplay false <
+    <
+    >if >flagInRange .flag huntersTimer .rangeStart 41 .rangeEnd 80 <
+     >lookAt .object hunter.02 .faceTowards player .elevation 0.2 <
+    <
+    >if >flagEquals .flag huntersTimer .value 61 <
+     >playSound .index 5 <
+     >setBehaviour .object hunter.02 .type packHunter .queueCollisionShape 5 .debugDisplay false <
+    <
+    >if >flagInRange .flag huntersTimer .rangeStart 1 .rangeEnd 40 <
+     >lookAt .object hunter.03 .faceTowards player .elevation 0.2 <
+    <
+    >if >flagEquals .flag huntersTimer .value 21 <
+     >playSound .index 5 <
+     >setBehaviour .object hunter.03 .type packHunter .queueCollisionShape 5 .debugDisplay false <
+    <
+
+    >decrement .flag huntersTimer <
+
+    >if
+     >and
+      >flagNotSet .flag helperSoundedAlarm <
+      >inRange .object player .object2 marker.helperSoundsAlarm .range 2000 <
+     <
+     >setFlag .flag helperSoundedAlarm <
+     >forAllOfType .type hunter >setSpeed .value 30 < <
+     >if >flagSet .flag helperGotHome <
+      >setBehaviour .object helper .type runScriptOnce
+       >playSound .index 7 <
+       >setTarget .target player <
+       >behaviour .type moveDirectlyTowards .duration 20 .engageDistance 150 <
+       >playSound .index 6 <
+       >behaviour .type agitated .duration 15 .radius 10 <
+       >playSound .index 6 <
+       >behaviour .type wait .duration 10 <
+       >playSound .index 6 <
+       >behaviour .type wait .duration 10 <
+       >setFlag .flag triggerRescue <
+      <setBehaviour
+     <
+    <
+
+    >if >flagSet .flag triggerRescue <
+     >clearFlag .flag triggerRescue <
+     >forAllOfType .type helper
+      >setBehaviour .type runScriptOnce
+       >behaviour .type rescueFromHunters .queueCollisionShape 5 <
+       >behaviour .type wait .duration 30 .durationVariance 20 <
+       >setTarget .target player <
+       >behaviour .type moveDirectlyTowards .duration 20 .engageDistance 150 <
+       >playSound .index 7 <
+       >behaviour .type visitGreenScenery .engageDistance 500 <
+      <
+     <
+    <
+
+    >if
+     >and
+      >isNotToggled .object frightened <
+      >overlaps .object player .target frightened <
+     <
+     >playSound .index 2 <
+     >setBehaviour .object frightened .type null <
+     >setToggled .object frightened <
+    <
+
+    >if >flagSet .flag helperSoundedAlarm <
+     >forAllOfType .type hunter
+      >if >isNotToggled <
+       >if
+        >or
+         >overlaps .target helper.01 <
+         >overlaps .target helper.02 <
+         >overlaps .target helper.03 <
+         >overlaps .target helper.04 <
+         >overlaps .target helper.05 <
+         >overlaps .target helper.06 <
+         >overlaps .target helper.07 <
+         >overlaps .target helper.08 <
+        <
+        >playSound .index 2 <
+        >setBehaviour .type null <
+        >setToggled <
+       <if
+      <if
+     <forAllOfType
+    <if
+
+    >forAllOfType .type hunter
+     >if
+      >and
+       >isNotToggled <
+       >overlaps .target player <
+      <
+      >playSound .index 2 <
+      >endLevel .result lose <
+     <
+    <
+
+    >if >overlaps .object player .target goal <
+     >playSound .index 10 <
+     >endLevel .result win <
+    < 
+   <frame 
+  <level
+
+ <levels
+<script
