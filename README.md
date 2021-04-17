@@ -1,10 +1,12 @@
 # PathEngine SDK Base
-SDK Base of a unknown version of PathEngine.
-For more about [PathEngine](https://sigmaco.org/?s=pathengine&bp_search=1&view=content), look at [SIGMAco.org](https://sigmaco.org), the our brazilian hub.
+Uma distro do SDK Base de PathEngine, um [middleware](https://sigmaco.org/t/middleware) de AI.
 
-For any questions, use our support at Discord:
+Para quaisquer dúvidas ou dificuldades, use nosso canal de suporte no [Discord](https://sigmaco.org/t/discord):
 
-[![](https://discordapp.com/api/guilds/349379672351571969/embed.png?style=banner1)](https://discord.gg/vUnjgYD?SIGMA_Technology_Group)
+[![](https://discordapp.com/api/guilds/349379672351571969/embed.png?style=banner4)](https://sigmaco.org/discord/)
 
-[PathEngine](https://sigmaco.org/?s=pathengine&bp_search=1&view=content) is © [2002](https://sigmaco.org/p/tag/2002)-[2019](https://sigmaco.org/p/tag/2019) [PathEngine](https://sigmaco.org/p/tag/pathengine). All rights reserved.
-This repository is intended merely to preserve the history and legacy of [PathEngine](https://sigmaco.org/?s=pathengine&bp_search=1&view=content). No copyright infringement targets any harm to its legal holders. For any objections, contact the [SIGMA Technology Group](https://sigmaco.org/g/technology) at [technology@sigmaco.org](mailto:technology@sigmaco.org).
+A disponibilização deste repositório é uma resposta do cyber-consórcio brasileiro [SIGMA Technology Group](https://sigmaco.org/g/technology) a solicitações de organizações cibernéticas de modificação de [gamewares](https://sigmaco.org/t/gameware) baseados em PathEngine.
+Esta disponibilização está restrita a fins de estudo e modificação de engenharia de gameware. A PathEngine reserva para si o licenciamento comercial.
+
+[PathEngine](https://sigmaco.org/t/pathengine) é © [2002](https://sigmaco.org/t/2002)-[2019](https://sigmaco.org/t/2019) [PathEngine](https://sigmaco.org/t/pathengine). Todos os direitos reservados.
+Contato administrativo: [technology@sigmaco.org](mailto:technology@sigmaco.org).
